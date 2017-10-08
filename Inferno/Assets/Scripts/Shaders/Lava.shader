@@ -21,6 +21,8 @@ Shader "Custom/Enviroment/Lava" {
 
    _AuraStrength("Aura Strength", Range(0.25,5)) = 1
 
+   _Speed("Speed", Range(0.25,10)) = 1
+
    _NoiseTex("Noise Texture", 2D) = "white" {}
 
    _MovingFire("Fire Movement", Vector) = (1,1,1)
@@ -73,15 +75,17 @@ Shader "Custom/Enviroment/Lava" {
 
    uniform float3 _MovingFire;
 
+   uniform float _Speed;
+
    v2f vert(appdata v) {
 
    v2f o;
 
-   v.vertex.x += (sin(v.vertex.x*_Time[1]*10)/10*tex2Dlod(_NoiseTex, float4(v.vertex.x,0,0,0)).r)*_MovingFire.x;
+   v.vertex.x += (sin(v.vertex.x*_Time[1]*_Speed*10)/10*tex2Dlod(_NoiseTex, float4(v.vertex.x,0,0,0)).r)*_MovingFire.x;
 
-   v.vertex.y += (sin(v.vertex.y*_Time[1]*10)/10*tex2Dlod(_NoiseTex, float4(v.vertex.x,0,0,0)).r)*_MovingFire.y;
+   v.vertex.y += (sin(v.vertex.y*_Time[1]*_Speed*10)/10*tex2Dlod(_NoiseTex, float4(v.vertex.x,0,0,0)).r)*_MovingFire.y;
 
-   v.vertex.z += (sin(v.vertex.z*_Time[1]*10)/10*tex2Dlod(_NoiseTex, float4(v.vertex.x,0,0,0)).r)*_MovingFire.z;
+   v.vertex.z += (sin(v.vertex.z*_Time[1]*_Speed*10)/10*tex2Dlod(_NoiseTex, float4(v.vertex.x,0,0,0)).r)*_MovingFire.z;
 
    v.vertex.xyz *= _AuraSize;
 
