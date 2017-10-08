@@ -143,9 +143,9 @@ public class Player : MonoBehaviour {
 
 		}
 
-		if (Input.GetMouseButtonDown(0) && EquippedSpell == "Aqua Ball" && Magica > 25) { // when the left mouse is clicked
+		if (Input.GetMouseButtonDown(0) && EquippedSpell == "Aqua Ball" && Magica > 10) { // when the left mouse is clicked
 
-			Magica -= 25.0f;
+			Magica -= 10.0f;
 
 			GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward), Quaternion.identity);
 
