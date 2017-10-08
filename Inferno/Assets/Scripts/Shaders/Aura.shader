@@ -27,7 +27,6 @@ Shader "Custom/Enviroment/Aura" {
 
    _MovingFire("Fire Movement", Vector) = (1,1,1)
 
-   Position("Position", Vector) = (0,0,0)
   
    }
 

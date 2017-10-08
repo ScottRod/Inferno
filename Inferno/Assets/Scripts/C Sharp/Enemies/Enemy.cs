@@ -12,21 +12,43 @@ public class Enemy : MonoBehaviour {
 
 		if (other.gameObject.tag == "Player") {
 
-			other.gameObject.GetComponent<Player> ().Health -= Damage;
+			other.gameObject.GetComponent<Player> ().Health -= Damage/2;
+
+		}
+
+		if (other.gameObject.tag == "Spell") {
+
+			Health -= 100.0f;
+
+			//Destroy (other.gameObject);
 
 		}
 
 	}
 
 	void OnTriggerStay(Collider other) {
-
-
+		
 
 	}
 
 	void OnTriggerExit(Collider other) {
 
+		if (other.gameObject.tag == "Player") {
 
+			other.gameObject.GetComponent<Player> ().Health -= Damage/2;
+
+		}
+
+	}
+
+
+	void Update() {
+
+		if (Health <= 0) {
+
+			Destroy (gameObject);
+
+		}
 
 	}
 
