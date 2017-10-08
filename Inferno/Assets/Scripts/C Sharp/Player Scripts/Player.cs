@@ -32,6 +32,12 @@ public class Player : MonoBehaviour {
 
 	public float Magica = 100.0f; // current magica 
 
+	public float MagicaRegenSpeed = 1.0f; // the regen speed
+
+	public GameObject AquaObject; // the water ball thing that the player can shoot
+
+	public string EquippedSpell = "Aqua Ball"; // the current equipped spell 
+
 	public GameObject MagicaText; // the text that displays the current magica text
 
 	public float MoveSpeed = 10.0f; // the player speed in meters per second
@@ -72,6 +78,10 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		Magica += Time.deltaTime * MagicaRegenSpeed;
+
+		Magica = Mathf.Clamp (Magica, 0, 100);
 
 		speed.x = 0.0f;
 
@@ -133,13 +143,25 @@ public class Player : MonoBehaviour {
 
 		}
 
+		if (Input.GetMouseButtonDown(0) && EquippedSpell == "Aqua Ball" && Magica > 25) { // when the left mouse is clicked
+
+			Magica -= 25.0f;
+
+			GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward), Quaternion.identity);
+
+			newAqua.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
+
+			Destroy (newAqua, 5.0f);
+
+		}
+
 		// updates the text to display the current Health, stamina and magica
 
 		HealthText.GetComponent<Text> ().text = "Health: " + Health;
 
-		StaminaText.GetComponent<Text> ().text = "Health: " + Stamina;
+		StaminaText.GetComponent<Text> ().text = "Stamina: " + Stamina;
 
-		MagicaText.GetComponent<Text> ().text = "Health: " + Magica;
+		MagicaText.GetComponent<Text> ().text = "Magica: " + Mathf.Floor(Magica);
 
 		cc.Move (transform.rotation * speed * Time.deltaTime); // moves the player
 		 
