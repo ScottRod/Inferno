@@ -137,9 +137,11 @@ public class Player : MonoBehaviour {
 
 		if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) {
 
-			speed.x *= 1.5f;
+			// speeds up the player speed
 
-			speed.z *= 1.5f;
+			speed.x *= 1.5f;  
+
+			speed.z *= 1.5f; 
 
 		}
 
