@@ -149,7 +149,7 @@ public class Player : MonoBehaviour {
 
 			Magica -= 10.0f;
 
-			GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward), Quaternion.identity);
+			GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * Playercamera.transform.position.y), Quaternion.identity);
 
 			newAqua.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
 
@@ -168,6 +168,8 @@ public class Player : MonoBehaviour {
 		cc.Move (transform.rotation * speed * Time.deltaTime); // moves the player
 		 
 	}
+
+	// *triggered*
 
 	void OnTriggerEnter(Collider other) {
 
