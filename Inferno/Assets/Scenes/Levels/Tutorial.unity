@@ -172,7 +172,7 @@ Prefab:
     - target: {fileID: 114542788675582710, guid: 31a5e15b5e0d941c493e705b40d1358e,
         type: 2}
       propertyPath: DialogueText
-      value: '"Use the left mouse to use abilities" *kill all enemies and get to goal*'
+      value: '"Use the left mouse to use abilities" *kill all enemies and get to portal*'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31a5e15b5e0d941c493e705b40d1358e, type: 2}
@@ -298,12 +298,12 @@ MonoBehaviour:
   Gravity: 1
   JumpPower: 5
   Dead: 0
-  Health: 10000
+  Health: 100
   HealthText: {fileID: 1064694074}
   Stamina: 100
   StaminaText: {fileID: 1172149019}
   Magica: 100
-  MagicaRegenSpeed: 1000
+  MagicaRegenSpeed: 5
   AquaObject: {fileID: 1243404867730958, guid: 05845f5f979f5489196741b645e58b38, type: 2}
   EquippedSpell: Aqua Ball
   MagicaText: {fileID: 392899649}
@@ -4122,15 +4122,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4141928109304398, guid: 360d0092b70b94bf6b678041918a804f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 125.35
+      value: 367.9
       objectReference: {fileID: 0}
     - target: {fileID: 4141928109304398, guid: 360d0092b70b94bf6b678041918a804f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.25
+      value: 19.2921
       objectReference: {fileID: 0}
     - target: {fileID: 4141928109304398, guid: 360d0092b70b94bf6b678041918a804f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 117.4
+      value: 141.3
       objectReference: {fileID: 0}
     - target: {fileID: 4141928109304398, guid: 360d0092b70b94bf6b678041918a804f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4162,13 +4162,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4141928109304398, guid: 360d0092b70b94bf6b678041918a804f, type: 2}
       propertyPath: m_LocalScale.z
-      value: 5.5303655
+      value: 5.530366
       objectReference: {fileID: 0}
     - target: {fileID: 114254619197284808, guid: 360d0092b70b94bf6b678041918a804f,
         type: 2}
       propertyPath: Target
       value: 
       objectReference: {fileID: 1443341372}
+    - target: {fileID: 1915569480513772, guid: 360d0092b70b94bf6b678041918a804f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 360d0092b70b94bf6b678041918a804f, type: 2}
   m_IsPrefabParent: 0
@@ -4680,13 +4684,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1546412825}
-  m_LocalRotation: {x: -0, y: -0.56740683, z: -0, w: -0.82343763}
-  m_LocalPosition: {x: 125.35, y: 1.3499999, z: 117.4}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 367.9, y: 5.4, z: 141.3}
   m_LocalScale: {x: 2.7292914, y: 2.7292926, z: 2.7292926}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 108
-  m_LocalEulerAnglesHint: {x: 0, y: -290.861, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!114 &1546412830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4698,7 +4702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7295c10f86c47a0b3fcede608840c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotateAmount: {x: 45, y: 0, z: 0}
+  RotateAmount: {x: 360, y: 0, z: 0}
 --- !u!1001 &1555369350
 Prefab:
   m_ObjectHideFlags: 0

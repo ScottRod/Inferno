@@ -25,7 +25,7 @@ Shader "Custom/Portal" {
 
       _OuterColour("Outer Tint Colour", Color) = (1,1,1,1)
 
-      _OuterRingSize("Ring Size", Range(1, 10)) = 1.5
+      _OuterRingSize("Ring Size", Range(1, 25)) = 1.5
 
    }
 
@@ -68,12 +68,6 @@ Shader "Custom/Portal" {
      uniform sampler2D _OuterTexture;
 
      uniform fixed4 _OuterColour;
-
-     float Sphere(float3 pos) {
-
-     return pos; 
-
-     }
 
      v2f vert(appdata v) {
 

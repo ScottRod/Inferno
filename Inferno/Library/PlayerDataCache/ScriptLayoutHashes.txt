@@ -13,6 +13,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.EventSystemChecker
+aff47adf81370d24c875e7ad39311f6d Assembly-CSharp.dll:.Rotate
 ae7e75715dcac4008ccba0500f2b331e Assembly-CSharp.dll:.ScorePass
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -175,4 +176,3 @@ b5f094a5be143968f3f47eb30099c49d Assembly-CSharp.dll:.Shoot
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FPSCounter
 97bc52248e569519d08456e477968991 Assembly-CSharp.dll:.UpdatePosition
 0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
-aff47adf81370d24c875e7ad39311f6d Assembly-CSharp.dll:.Rotate
