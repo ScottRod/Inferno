@@ -1,4 +1,11 @@
-﻿Shader "Custom/Portal" {
+﻿
+// Author: Scott Blyth
+
+// Name: Portal
+
+// Date Finished: 14/10/17
+
+Shader "Custom/Portal" {
 
    Properties {
 
@@ -28,7 +35,7 @@
 
      Zwrite Off
 
-     // outside texture
+     // outside pass
 
      Pass {
 
@@ -62,11 +69,31 @@
 
      uniform fixed4 _OuterColour;
 
+     float Sphere(float3 pos) {
+
+     return pos; 
+
+     }
+
      v2f vert(appdata v) {
 
      v2f o;
 
      o.uv = v.uv;
+
+     float x = v.vertex.x;
+
+     float y = v.vertex.y;
+
+     float z = v.vertex.z;
+
+     float Pi = 3.14;
+
+     v.vertex.x *= (sin(length(x/Pi)*_Time[1]*10) + 2) / 2;
+
+     v.vertex.y *= (sin(length(y/Pi)*_Time[1]*10) + 2) / 2;
+
+     v.vertex.z *= (sin(length(z/Pi)*_Time[1]*10) + 2) / 2;
 
      v.vertex.xyz *= _OuterRingSize;
 
@@ -145,8 +172,6 @@
      float len = length(tc);
 
      float3 newPos = (len * 5.0 * cos(len*24.0-_Time[1]*4.0) * 0.03);
-
-     // float2 newPos = tc + (p/len)*freq*cos(len*24.0-_Time[1]*4.0)*0.03;
 
      v.vertex.x += len*cos(len*24.0-_Time[1]*4.0)*tc.x*sin(x*_Time[1])/Smoothness * tex2Dlod(_NoiseTex, float4(x,0,0,0)).r;
 
