@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour {
 
 		if (other.gameObject.tag == "Spell") {
 
-			Health -= 100.0f;
+			Health -= other.gameObject.GetComponent<Shoot>().Damage;
 
 			//Destroy (other.gameObject);
 

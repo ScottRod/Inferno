@@ -119,7 +119,7 @@ public class Player : MonoBehaviour {
 
 			RotateYaw -= Input.GetAxis ("Mouse Y") * LookSenstivity.y;
 
-			RotateYaw = Mathf.Clamp (RotateYaw, -85, 85);
+			RotateYaw = Mathf.Clamp (RotateYaw, -85, 90);
 
 			// look y
 
@@ -149,7 +149,7 @@ public class Player : MonoBehaviour {
 
 			Magica -= 10.0f;
 
-			GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * Playercamera.transform.position.y), Quaternion.identity);
+			GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward + new Vector3(0,Playercamera.transform.localPosition.y,0)), Quaternion.identity);
 
 			newAqua.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
 
