@@ -3,8 +3,8 @@
    Properties {
 
      _MainTex("Texture", 2D) = "white" {}
-
-     _Color("Colour", Color) = (1,1,1,1)
+   
+     _Color("Tint Colour", Color) = (1,1,1,1)
 
      _Brightness("Brightness", Range(1, 10)) = 1
 
@@ -14,11 +14,79 @@
 
      Smoothness("Smoothness", Range(1,20)) = 10
 
+      _OuterTexture("Outer Texture", 2D) = "white" {}
+
+      _OuterColour("Outer Tint Colour", Color) = (1,1,1,1)
+
+      _OuterRingSize("Ring Size", Range(1, 10)) = 1.5
+
    }
 
    SubShader {
 
      Tags {"Queue" = "Transparent"}
+
+     Zwrite Off
+
+     // outside texture
+
+     Pass {
+
+     CGPROGRAM
+
+     #pragma vertex vert
+
+     #pragma fragment frag
+
+     #include "UnityCG.cginc"
+
+     struct appdata {
+
+     float4 vertex : POSITION;
+
+     float2 uv : TEXCOORD0;
+
+     };
+
+     struct v2f {
+
+     float4 vertex : SV_POSITION;
+
+     float2 uv : TEXCOORD0;
+
+     };
+
+     uniform float _OuterRingSize;
+
+     uniform sampler2D _OuterTexture;
+
+     uniform fixed4 _OuterColour;
+
+     v2f vert(appdata v) {
+
+     v2f o;
+
+     o.uv = v.uv;
+
+     v.vertex.xyz *= _OuterRingSize;
+
+     o.vertex = UnityObjectToClipPos(v.vertex);
+
+     return o;
+
+     }
+
+     fixed4 frag(v2f i) :  SV_Target {
+
+     fixed4 col = tex2D(_OuterTexture, i.uv) * _OuterColour;
+ 
+     return col;
+
+     }
+
+     ENDCG
+
+     }
 
      Blend SrcAlpha OneMinusSrcAlpha
 
@@ -52,9 +120,17 @@
 
      uniform sampler2D _NoiseTex;
 
+     uniform sampler2D _MainTex;
+
+     uniform fixed4 _Color;
+
+     uniform fixed _Brightness;
+
+     uniform float freq;
+
      v2f vert(appdata v) {
 
-     v2f o; // o stands for output, ik this is a usless comment
+     v2f o; 
 
      o.uv = v.uv;
 
@@ -83,14 +159,6 @@
      return o;
 
      }
-
-     uniform sampler2D _MainTex;
-
-     uniform fixed4 _Color;
-
-     uniform fixed _Brightness;
-
-     uniform float freq;
 
      fixed4 frag(v2f i) : SV_Target {
 
