@@ -294,6 +294,7 @@ MonoBehaviour:
   NormalCameraMaterial: {fileID: 2100000, guid: e7225ffec9c274f1c8f3323a990939dc,
     type: 2}
   LavaCameraMaterial: {fileID: 2100000, guid: c3b21ca34fbed4c5d912ffbd5afdaebf, type: 2}
+  Score: 0
   CurrentScene: Tutorial
   Gravity: 1
   JumpPower: 5
@@ -1865,7 +1866,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4601372398669508, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 13.909996
+      value: 45.4
       objectReference: {fileID: 0}
     - target: {fileID: 4601372398669508, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1873,7 +1874,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4601372398669508, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 130.28575
+      value: 122.4
       objectReference: {fileID: 0}
     - target: {fileID: 4601372398669508, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2347,7 +2348,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4601372398669508, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 13.075241
+      value: 46.3
       objectReference: {fileID: 0}
     - target: {fileID: 4601372398669508, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4185,7 +4186,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4601372398669508, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 14.789993
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 4601372398669508, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4620,6 +4621,8 @@ GameObject:
   - component: {fileID: 1546412827}
   - component: {fileID: 1546412826}
   - component: {fileID: 1546412830}
+  - component: {fileID: 1546412832}
+  - component: {fileID: 1546412831}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -4703,6 +4706,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotateAmount: {x: 360, y: 0, z: 0}
+--- !u!114 &1546412831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546412825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e31f1a938fa4e7c9e36559a640c7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 0
+  PortalMat: {fileID: 2100000, guid: 818027306817041fdb1d2ace3faab24a, type: 2}
+  CameraObj: {fileID: 1709875969}
+  XrayCameraMaterial: {fileID: 2100000, guid: f8ae9edf0962b48f3a254520c44c6ccc, type: 2}
+  NormalCameraMaterial: {fileID: 2100000, guid: e7225ffec9c274f1c8f3323a990939dc,
+    type: 2}
+  PlayerObj: {fileID: 50350025}
+  RingSizeName: _OuterRingSize
+  SceneToLoad: Tutorial
+--- !u!114 &1546412832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546412825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284de1d125daa4bb8840d4c4abfd0dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerObj: {fileID: 50350025}
+  PortalObj: {fileID: 1546412825}
+  RequiredKillCount: 0
 --- !u!1001 &1555369350
 Prefab:
   m_ObjectHideFlags: 0

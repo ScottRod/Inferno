@@ -12,9 +12,9 @@ public class ScorePass : MonoBehaviour {
 
 	public GameObject PlayerObj; // the player will keep track of the current kill count
 
-	public GameObject Portal; // when the requirments have met the portal will be active and the player will be able to travel through the portal
+	public GameObject PortalObj; // when the requirments have met the portal will be active and the player will be able to travel through the portal
 
-	public float RequiredKillCount =  0.0f; // how many enemies the player has to kill before completing the level
+	public int RequiredKillCount =  0; // how many enemies the player has to kill before completing the level
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +24,11 @@ public class ScorePass : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (PlayerObj.GetComponent<Player> ().Score >= RequiredKillCount) {
 
+			PortalObj.GetComponent<Portal> ().Active = true;
+
+		}
 		
 	}
 }

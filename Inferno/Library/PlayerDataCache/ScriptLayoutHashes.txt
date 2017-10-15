@@ -14,7 +14,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.EventSystemChecker
 aff47adf81370d24c875e7ad39311f6d Assembly-CSharp.dll:.Rotate
-ae7e75715dcac4008ccba0500f2b331e Assembly-CSharp.dll:.ScorePass
+2aa67eb29fe0fa061cf8211982dd393e Assembly-CSharp.dll:.ScorePass
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -150,9 +150,9 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 21984f001d5a114ee9fbf62810ee8eb7 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.SpecularLighting
 2dbfd4f7836c7f6a79e17be5f4bf7969 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.WaypointCircuit
-65ce61bce6a9cc1cdde99a2eb764fefc Assembly-CSharp.dll:.Portal
+5636941a9789406f541dd992affa59a7 Assembly-CSharp.dll:.Portal
 2c62b9ae79b8b54dd7b55fa7d311452b Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.Water
-042e20e0454b2cd70b3cf24d6e5fd0cd Assembly-CSharp.dll:.Player
+ff0f1affec66a09e4a31700ee6841bd1 Assembly-CSharp.dll:.Player
 2636e852a6692498945ad679f2c2756c Assembly-CSharp.dll:.MoveTo
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 5f2ad81aa8994e8fbe25d1e57afe6773 UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController

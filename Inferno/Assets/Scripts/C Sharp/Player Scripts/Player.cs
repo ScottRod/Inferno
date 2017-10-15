@@ -14,6 +14,8 @@ public class Player : MonoBehaviour {
 
 	public Material LavaCameraMaterial; // what the camera looks like when the player is under lava or buring
 
+	public int Score = 0;
+
 	public string CurrentScene = "Level 1";
 
 	public float Gravity = 1.0f; // gravity strength

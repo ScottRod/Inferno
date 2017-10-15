@@ -99,7 +99,17 @@ Shader "Custom/Portal" {
 
      fixed4 frag(v2f i) :  SV_Target {
 
-     fixed4 col = tex2D(_OuterTexture, i.uv) * _OuterColour;
+     fixed4 col = tex2D(_OuterTexture, i.uv);
+
+     fixed average = (col.r+col.b+col.g)/3;
+
+     col.r = average;
+
+     col.b = average;
+
+     col.g = average;
+
+     col *= _OuterColour;
  
      return col;
 
