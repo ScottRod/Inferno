@@ -33,24 +33,28 @@ public class Portal : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Vector3.Distance (PlayerObj.transform.position, transform.position) < (transform.localScale.y * PortalMat.GetFloat (RingSizeName)) / 3) {
+		if (Active == true) {
 
-			SceneManager.LoadScene (SceneToLoad);
+			if (Vector3.Distance (PlayerObj.transform.position, transform.position) < (transform.localScale.y * PortalMat.GetFloat (RingSizeName)) / 3) {
 
-		}
+				SceneManager.LoadScene (SceneToLoad);
 
-		if (Vector3.Distance (PlayerObj.transform.position, transform.position) < (transform.localScale.y * PortalMat.GetFloat (RingSizeName)) / 2 && x == false) {
+			}
 
-			CameraObj.GetComponent<CameraMaterialChange> ().newMaterial = XrayCameraMaterial;
+			if (Vector3.Distance (PlayerObj.transform.position, transform.position) < (transform.localScale.y * PortalMat.GetFloat (RingSizeName)) / 2 && x == false) {
 
-			x = true;
+				CameraObj.GetComponent<CameraMaterialChange> ().newMaterial = XrayCameraMaterial;
+
+				x = true;
 
 
-		} else if(x == true && Vector3.Distance(PlayerObj.transform.position, transform.position) >= (transform.localScale.y * PortalMat.GetFloat (RingSizeName))) {
+			} else if (x == true && Vector3.Distance (PlayerObj.transform.position, transform.position) >= (transform.localScale.y * PortalMat.GetFloat (RingSizeName))) {
 
-			x = false;
+				x = false;
 
-			CameraObj.GetComponent<CameraMaterialChange> ().newMaterial = NormalCameraMaterial;
+				CameraObj.GetComponent<CameraMaterialChange> ().newMaterial = NormalCameraMaterial;
+
+			}
 
 		}
 		

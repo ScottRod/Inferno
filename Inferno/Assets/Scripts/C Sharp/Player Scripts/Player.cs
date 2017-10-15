@@ -137,13 +137,23 @@ public class Player : MonoBehaviour {
 
 		// sprinting
 
-		if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) {
+		Stamina = Mathf.Clamp (Stamina, 0, 100);
+
+		Stamina += Time.deltaTime * 2;
+
+		if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) && Stamina >= 0) {
 
 			// speeds up the player speed
 
 			speed.x *= 1.5f;  
 
 			speed.z *= 1.5f; 
+
+			if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.D)) {
+
+				Stamina -= Time.deltaTime * 15;
+
+			}
 
 		}
 
@@ -163,7 +173,7 @@ public class Player : MonoBehaviour {
 
 		HealthText.GetComponent<Text> ().text = "Health: " + Health;
 
-		StaminaText.GetComponent<Text> ().text = "Stamina: " + Stamina;
+		StaminaText.GetComponent<Text> ().text = "Stamina: " + Mathf.Floor(Stamina);
 
 		MagicaText.GetComponent<Text> ().text = "Magica: " + Mathf.Floor(Magica);
 

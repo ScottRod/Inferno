@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour {
 
 	public float Damage = 10.0f; // per hit
 
+	public GameObject PlayerObj;
+
 	void OnCollisionEnter(Collision other) {
 
 		if (other.gameObject.tag == "Player") {
@@ -37,6 +39,7 @@ public class Enemy : MonoBehaviour {
 
 			other.gameObject.GetComponent<Player> ().Health -= Damage/2;
 
+
 		}
 
 	}
@@ -45,6 +48,8 @@ public class Enemy : MonoBehaviour {
 	void Update() {
 
 		if (Health <= 0) {
+
+			PlayerObj.GetComponent<Player> ().Score += 1;
 
 			Destroy (gameObject);
 
