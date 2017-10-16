@@ -36,6 +36,8 @@ public class Player : MonoBehaviour {
 
 	public float MagicaRegenSpeed = 1.0f; // the regen speed
 
+	public float SpellCastDelay = 0.0f; // the minumum time between spell casts
+
 	public GameObject AquaObject; // the water ball thing that the player can shoot
 
 	public string EquippedSpell = "Aqua Ball"; // the current equipped spell 
@@ -141,7 +143,7 @@ public class Player : MonoBehaviour {
 
 		Stamina += Time.deltaTime * 2;
 
-		if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) && Stamina >= 0) {
+		if (Input.GetKey(KeyCode.LeftShift) && Stamina >= 1 || Input.GetKey(KeyCode.RightShift) && Stamina >= 0) {
 
 			// speeds up the player speed
 
@@ -157,7 +159,9 @@ public class Player : MonoBehaviour {
 
 		}
 
-		if (Input.GetMouseButtonDown(0) && EquippedSpell == "Aqua Ball" && Magica > 10) { // when the left mouse is clicked
+		SpellCastDelay -= Time.deltaTime;
+
+		if (Input.GetMouseButtonDown(0) && EquippedSpell == "Aqua Ball" && Magica > 10 && SpellCastDelay <= 0) { // when the left mouse is clicked
 
 			Magica -= 10.0f;
 
@@ -167,13 +171,15 @@ public class Player : MonoBehaviour {
 
 			Destroy (newAqua, 5.0f);
 
+			SpellCastDelay = 0.5f;
+		
 		}
 
 		// updates the text to display the current Health, stamina and magica
 
 		HealthText.GetComponent<Text> ().text = "Health: " + Health;
 
-		StaminaText.GetComponent<Text> ().text = "Stamina: " + Mathf.Floor(Stamina);
+		StaminaText.GetComponent<Text> ().text = "Stamina: " + Mathf.Floor(Mathf.Clamp(Stamina, 0.999f,100));
 
 		MagicaText.GetComponent<Text> ().text = "Magica: " + Mathf.Floor(Magica);
 
