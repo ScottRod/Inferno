@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 46
+  controlID: 119
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 47
+  controlID: 72
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,7 +368,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: f24afcff684bfcff287dfcff3a7dfcff363efdffac3efdff6c70fdff7e70fdff1afcffff00000000
+    m_ExpandedIDs: 1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -417,15 +417,15 @@ MonoBehaviour:
     y: 94
     width: 632
     height: 364
-  m_SceneLighting: 0
+  m_SceneLighting: 1
   lastFramingTime: 1197.4666799902916
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 229.67334, y: -13.749049, z: 235.6849}
+    m_Target: {x: 217.22083, y: -0.045563973, z: 258.31335}
     speed: 2
-    m_Value: {x: 229.67334, y: -13.749049, z: 235.6849}
+    m_Value: {x: 217.22083, y: -0.045563973, z: 258.31335}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -448,13 +448,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.0026865052, y: 0.9719058, z: -0.2350925, w: -0.011111396}
+    m_Target: {x: -0.002653159, y: 0.9726067, z: -0.23217575, w: -0.011119406}
     speed: 2
-    m_Value: {x: -0.0026865052, y: 0.9719058, z: -0.2350925, w: -0.011111396}
+    m_Value: {x: -0.002653159, y: 0.9726067, z: -0.23217575, w: -0.011119406}
   m_Size:
-    m_Target: 53.031693
+    m_Target: 72.25098
     speed: 2
-    m_Value: 53.031693
+    m_Value: 72.25098
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -529,19 +529,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/C Sharp/Player Scripts
+    - Assets/Scripts/C Sharp
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/C Sharp/Player Scripts
+  - Assets/Scripts/C Sharp
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/scottblyth/Desktop/GitHub/Inferno-2/Inferno
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 373}
-    m_SelectedIDs: 6e270000
-    m_LastClickedID: 10094
-    m_ExpandedIDs: 000000007a26000084260000c42600001e2700002427000090270000c62700001628000094280000c82800005429000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 411}
+    m_SelectedIDs: 90270000
+    m_LastClickedID: 10128
+    m_ExpandedIDs: 000000007a26000084260000c42600001e2700002427000090270000c62700001628000094280000ca2800005629000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -569,7 +569,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007a26000084260000c42600001e2700002427000090270000c62700001628000094280000c828000054290000
+    m_ExpandedIDs: 000000007a26000084260000c42600001e2700002427000090270000c62700001628000094280000ca28000056290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

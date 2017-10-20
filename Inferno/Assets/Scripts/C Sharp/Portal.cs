@@ -7,6 +7,10 @@ public class Portal : MonoBehaviour {
 
 	public bool Active = false;
 
+	public bool LevelAccessPortal = false;
+
+	public string LevelName;
+
 	public Material PortalMat;
 
 	public GameObject CameraObj;
@@ -32,6 +36,12 @@ public class Portal : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (PlayerPrefs.GetInt (LevelName, 0) != 0) {
+
+			Active = false;
+
+		}
 
 		if (Active == true) {
 
