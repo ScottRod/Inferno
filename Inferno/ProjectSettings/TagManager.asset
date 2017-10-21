@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lava
   - Spell
+  - Fire Ball
   layers:
   - Default
   - TransparentFX

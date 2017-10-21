@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114779803484301618}
   - component: {fileID: 114715109913977440}
   - component: {fileID: 54327422990567802}
+  - component: {fileID: 114113823261428564}
   m_Layer: 0
   m_Name: Lava Monster
   m_TagString: Untagged
@@ -166,6 +167,22 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114113823261428564
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1552835165037344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba1bef89ac7b450c9fc5a03852a874d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShootObj: {fileID: 1125664823650826, guid: 65acfb4e4da4448cf870c9fed1395940, type: 2}
+  Target: {fileID: 0}
+  ShootDelayRange: {x: 3, y: 5}
+  Velocity: 1500
+  DestroyDelay: 5
 --- !u!114 &114715109913977440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,6 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   Damage: 10
+  PlayerObj: {fileID: 0}
 --- !u!114 &114779803484301618
 MonoBehaviour:
   m_ObjectHideFlags: 1

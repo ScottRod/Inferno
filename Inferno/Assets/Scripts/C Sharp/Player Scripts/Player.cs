@@ -263,7 +263,7 @@ public class Player : MonoBehaviour {
 
 		SpellCastDelay -= Time.deltaTime;
 
-		if (Input.GetMouseButtonDown(1) && EquippedSpell == "Aqua Ball" && Magica > 10 && SpellCastDelay <= 0) { // when the left mouse is clicked
+		if (Input.GetMouseButtonDown(1) && EquippedSpell == "Aqua Ball" && Magica >= 10 && SpellCastDelay <= 0 && InventoryObj.activeSelf == false) { // when the left mouse is clicked
 
 			Magica -= 10.0f;
 
@@ -355,5 +355,16 @@ public class Player : MonoBehaviour {
 
 	}
 
+    void OnCollisionEnter(Collision other) {
+
+		if(other.gameObject.tag == "Fire Ball") { 
+
+			Health -= 25.0f;
+
+ 			Destroy(other.gameObject);
+
+		}
+
+    }
 
 }
