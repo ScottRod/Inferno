@@ -146,7 +146,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4886710482717436, guid: 31a5e15b5e0d941c493e705b40d1358e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1717238379789068, guid: 31a5e15b5e0d941c493e705b40d1358e, type: 2}
       propertyPath: m_Name
@@ -239,11 +239,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31a5e15b5e0d941c493e705b40d1358e, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &50350025 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1859349221491324, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-    type: 2}
-  m_PrefabInternal: {fileID: 1820462993}
 --- !u!1001 &56705644
 Prefab:
   m_ObjectHideFlags: 0
@@ -287,7 +282,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (90)
@@ -306,7 +301,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -508,7 +503,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (70)
@@ -527,7 +522,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -574,7 +569,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (97)
@@ -593,7 +588,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -732,7 +727,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (99)
@@ -751,7 +746,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -890,7 +885,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (83)
@@ -909,7 +904,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -1162,7 +1157,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (85)
@@ -1181,7 +1176,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -1274,7 +1269,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (71)
@@ -1293,7 +1288,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -1472,7 +1467,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (106)
@@ -1491,7 +1486,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -1776,7 +1771,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (87)
@@ -1795,7 +1790,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -1938,7 +1933,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 114779803484301618, guid: 1725211020cb74337a2ea9945e460f6b,
         type: 2}
       propertyPath: ViewDistance
@@ -1953,7 +1948,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -2046,7 +2041,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (57)
@@ -2065,7 +2060,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -2112,7 +2107,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 114779803484301618, guid: 1725211020cb74337a2ea9945e460f6b,
         type: 2}
       propertyPath: ViewDistance
@@ -2131,7 +2126,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -2180,39 +2175,39 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4621083444935792, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4832660821689616, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4839854043163342, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4773770047758736, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4446197147711040, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4058784873367212, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4409270069137306, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4684549053173012, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4999799732307366, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4208514215399536, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
@@ -2220,7 +2215,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4386621428671494, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4862034900586778, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
       propertyPath: m_RootOrder
@@ -2245,6 +2240,163 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &778631825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1933706794329006, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 778631826}
+  - component: {fileID: 778631827}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &778631826
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4717759943990880, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 778631825}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 8.255601, y: 2.8185914, z: 8.255599}
+  m_Children: []
+  m_Father: {fileID: 2062039257}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &778631827
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 108495477300497820, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 778631825}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 0.7241379, b: 0, a: 1}
+  m_Intensity: 2
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &786402741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1300912086964812, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 786402742}
+  - component: {fileID: 786402745}
+  - component: {fileID: 786402744}
+  - component: {fileID: 786402743}
+  m_Layer: 0
+  m_Name: Torch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786402742
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4229607870543554, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786402741}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.11, y: -0.30000007, z: 1.35}
+  m_LocalScale: {x: 0.17807806, y: 0.46266046, z: 0.17807809}
+  m_Children:
+  - {fileID: 2062039257}
+  m_Father: {fileID: 1258933640}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &786402743
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23157395890042994, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786402741}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 4a448ce4e0be9400a9dc8cfe6ba8eb72, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!136 &786402744
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 136573350128970718, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786402741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &786402745
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33865726497289108, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 786402741}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &789286691
 Prefab:
   m_ObjectHideFlags: 0
@@ -2477,7 +2629,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (64)
@@ -2496,7 +2648,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -2543,7 +2695,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (86)
@@ -2562,7 +2714,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -2613,7 +2765,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 114779803484301618, guid: 1725211020cb74337a2ea9945e460f6b,
         type: 2}
       propertyPath: ViewDistance
@@ -2628,7 +2780,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -2675,7 +2827,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (84)
@@ -2694,7 +2846,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -2787,7 +2939,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (78)
@@ -2806,7 +2958,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -2853,7 +3005,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (95)
@@ -2872,7 +3024,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -3111,7 +3263,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (88)
@@ -3130,7 +3282,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -3177,7 +3329,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 114779803484301618, guid: 1725211020cb74337a2ea9945e460f6b,
         type: 2}
       propertyPath: ViewDistance
@@ -3196,7 +3348,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -3243,7 +3395,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (103)
@@ -3262,7 +3414,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -3401,7 +3553,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (65)
@@ -3420,7 +3572,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -3477,7 +3629,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (69)
@@ -3496,7 +3648,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -3543,7 +3695,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (66)
@@ -3562,7 +3714,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -3655,7 +3807,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (61)
@@ -3674,7 +3826,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -3792,7 +3944,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (56)
@@ -3811,7 +3963,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -3858,7 +4010,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (80)
@@ -3877,7 +4029,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -4072,25 +4224,140 @@ Prefab:
         type: 2}
       propertyPath: CameraObj
       value: 
-      objectReference: {fileID: 1709875969}
+      objectReference: {fileID: 1258933634}
     - target: {fileID: 114774762994935174, guid: 59149a619eede49cf95a73639c698536,
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     - target: {fileID: 114844885724716750, guid: 59149a619eede49cf95a73639c698536,
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     - target: {fileID: 114774762994935174, guid: 59149a619eede49cf95a73639c698536,
         type: 2}
       propertyPath: SceneToLoad
       value: Purgatory
       objectReference: {fileID: 0}
+    - target: {fileID: 114774762994935174, guid: 59149a619eede49cf95a73639c698536,
+        type: 2}
+      propertyPath: LevelName
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59149a619eede49cf95a73639c698536, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1258933634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1547204466124962, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1258933640}
+  - component: {fileID: 1258933639}
+  - component: {fileID: 1258933638}
+  - component: {fileID: 1258933637}
+  - component: {fileID: 1258933636}
+  - component: {fileID: 1258933635}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1258933635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114419470624345302, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258933634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f98932b1ac8e4be6a5c4d1fd79c3392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newMaterial: {fileID: 2100000, guid: e7225ffec9c274f1c8f3323a990939dc, type: 2}
+--- !u!81 &1258933636
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 81336549516917484, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258933634}
+  m_Enabled: 1
+--- !u!124 &1258933637
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 124705195419469786, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258933634}
+  m_Enabled: 1
+--- !u!92 &1258933638
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 92249226279893414, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258933634}
+  m_Enabled: 1
+--- !u!20 &1258933639
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 20169705400531786, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258933634}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!4 &1258933640
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4026061677120988, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258933634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.72, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 786402742}
+  m_Father: {fileID: 1600971823}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1260363285
 Prefab:
   m_ObjectHideFlags: 0
@@ -4180,7 +4447,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (91)
@@ -4199,7 +4466,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -4251,7 +4518,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 114779803484301618, guid: 1725211020cb74337a2ea9945e460f6b,
         type: 2}
       propertyPath: ViewDistance
@@ -4270,7 +4537,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -4317,7 +4584,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (104)
@@ -4336,7 +4603,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -4475,7 +4742,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (81)
@@ -4494,15 +4761,10 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1443341372 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4204613302338280, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-    type: 2}
-  m_PrefabInternal: {fileID: 1820462993}
 --- !u!1001 &1447349098
 Prefab:
   m_ObjectHideFlags: 0
@@ -4546,7 +4808,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (102)
@@ -4565,7 +4827,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -4908,7 +5170,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1915569480513772, guid: 360d0092b70b94bf6b678041918a804f, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -4959,7 +5221,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (59)
@@ -4978,7 +5240,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -5025,7 +5287,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (73)
@@ -5044,7 +5306,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -5183,7 +5445,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (93)
@@ -5202,7 +5464,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -5249,7 +5511,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (68)
@@ -5268,7 +5530,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -5472,7 +5734,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (62)
@@ -5491,7 +5753,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -5541,6 +5803,152 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1600971817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1154503687947000, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1600971823}
+  - component: {fileID: 1600971822}
+  - component: {fileID: 1600971821}
+  - component: {fileID: 1600971820}
+  - component: {fileID: 1600971819}
+  - component: {fileID: 1600971818}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!143 &1600971818
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 143414037545198832, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600971817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1600971819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114709005147735126, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600971817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e87676a3b07049af8c28103235bbd25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Playercamera: {fileID: 1258933634}
+  NormalCameraMaterial: {fileID: 2100000, guid: e7225ffec9c274f1c8f3323a990939dc,
+    type: 2}
+  LavaCameraMaterial: {fileID: 2100000, guid: c3b21ca34fbed4c5d912ffbd5afdaebf, type: 2}
+  Score: 0
+  CurrentScene: Tutorial
+  Gravity: 1
+  JumpPower: 5
+  Dead: 0
+  Health: 100
+  HealthText: {fileID: 1064694074}
+  Stamina: 100
+  StaminaText: {fileID: 1172149019}
+  Magica: 100
+  MagicaRegenSpeed: 5
+  SpellCastDelay: 0
+  AquaObject: {fileID: 1243404867730958, guid: 05845f5f979f5489196741b645e58b38, type: 2}
+  EquippedSpell: Aqua Ball
+  EquippedWeapon: 
+  AquaSword: {fileID: 1123315651662892, guid: 334fb669fdeeb48239ca8f19dfcd2df7, type: 2}
+  MagicaText: {fileID: 392899649}
+  MoveSpeed: 4
+  SprintSpeed: 12
+  LookSenstivity: {x: 1, y: 1}
+  RotateYaw: 0
+--- !u!23 &1600971820
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23590701499807868, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600971817}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 698868fa792494d1498091b83b922fce, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!136 &1600971821
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 136785857531908302, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600971817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1600971822
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33202674076100528, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600971817}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1600971823
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4890410249627214, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600971817}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 111.74, y: 1.04, z: 115.4957}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1258933640}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1634689963
 Prefab:
   m_ObjectHideFlags: 0
@@ -5578,7 +5986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4987161683766446, guid: fe5736432cd3b42ba992710329cab5b7, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4987161683766446, guid: fe5736432cd3b42ba992710329cab5b7, type: 2}
       propertyPath: m_LocalScale.x
@@ -5656,7 +6064,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (67)
@@ -5675,7 +6083,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -5871,11 +6279,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0e89543cc16841a0aa04e2eff48a0d0, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1709875969 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1578552478558906, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-    type: 2}
-  m_PrefabInternal: {fileID: 1820462993}
 --- !u!1001 &1714543420
 Prefab:
   m_ObjectHideFlags: 0
@@ -6241,7 +6644,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (100)
@@ -6260,71 +6663,9 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1820462993
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4204613302338280, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 111.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4204613302338280, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 4204613302338280, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 115.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4204613302338280, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4204613302338280, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4204613302338280, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4204613302338280, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4204613302338280, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114745097746402944, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: HealthText
-      value: 
-      objectReference: {fileID: 1064694074}
-    - target: {fileID: 114745097746402944, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: StaminaText
-      value: 
-      objectReference: {fileID: 1172149019}
-    - target: {fileID: 114745097746402944, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: MagicaText
-      value: 
-      objectReference: {fileID: 392899649}
-    - target: {fileID: 114745097746402944, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: CurrentScene
-      value: Purgatory
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1821747620
 Prefab:
@@ -6369,7 +6710,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (82)
@@ -6388,7 +6729,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -6435,7 +6776,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (105)
@@ -6454,7 +6795,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -6547,7 +6888,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (63)
@@ -6566,7 +6907,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -6659,7 +7000,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (76)
@@ -6678,7 +7019,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -6725,7 +7066,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (101)
@@ -6744,7 +7085,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -6929,7 +7270,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (79)
@@ -6948,7 +7289,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -7087,7 +7428,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (96)
@@ -7106,7 +7447,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -7153,7 +7494,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (72)
@@ -7172,7 +7513,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -7219,7 +7560,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (89)
@@ -7238,7 +7579,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -7255,7 +7596,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4141928109304398, guid: 360d0092b70b94bf6b678041918a804f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.2936656
+      value: 0.29366556
       objectReference: {fileID: 0}
     - target: {fileID: 4141928109304398, guid: 360d0092b70b94bf6b678041918a804f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7297,7 +7638,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 360d0092b70b94bf6b678041918a804f, type: 2}
   m_IsPrefabParent: 0
@@ -7394,7 +7735,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 114779803484301618, guid: 1725211020cb74337a2ea9945e460f6b,
         type: 2}
       propertyPath: ViewDistance
@@ -7409,7 +7750,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
@@ -7502,7 +7843,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (74)
@@ -7521,10 +7862,98 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2062039256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1787132836099888, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2062039257}
+  - component: {fileID: 2062039260}
+  - component: {fileID: 2062039259}
+  - component: {fileID: 2062039258}
+  m_Layer: 0
+  m_Name: Fire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2062039257
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4495634295573030, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062039256}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.45, z: 0}
+  m_LocalScale: {x: 0.6802067, y: 0.7668413, z: 0.6802067}
+  m_Children:
+  - {fileID: 778631826}
+  m_Father: {fileID: 786402742}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2062039258
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23118400407742780, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062039256}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d068c791454bf4f00baa95c0a510e8ec, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &2062039259
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 135499416724726124, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062039256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2062039260
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33638929326631472, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062039256}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &2062483181
 Prefab:
   m_ObjectHideFlags: 0
@@ -7706,7 +8135,7 @@ Prefab:
         type: 2}
       propertyPath: Target
       value: 
-      objectReference: {fileID: 1443341372}
+      objectReference: {fileID: 1600971823}
     - target: {fileID: 1552835165037344, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
       propertyPath: m_Name
       value: Lava Monster (98)
@@ -7725,7 +8154,7 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 50350025}
+      objectReference: {fileID: 1600971817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1725211020cb74337a2ea9945e460f6b, type: 2}
   m_IsPrefabParent: 0

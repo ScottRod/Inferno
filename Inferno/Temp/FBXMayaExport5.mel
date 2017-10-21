@@ -1,0 +1,22 @@
+print "Starting maya loading and fbx conversion \n";
+	
+if (`file -q -exists "/Users/scottblyth/Desktop/GitHub/Inferno-2/Inferno/Assets/Images/3D/Inferno Sword.mb"`)
+{		
+	file -o "/Users/scottblyth/Desktop/GitHub/Inferno-2/Inferno/Assets/Images/3D/Inferno Sword.mb";
+	FBXExportEmbeddedTextures -v false;
+	// FBXExportHardEdges -v true;
+	FBXExportApplyConstantKeyReducer -v false;
+	FBXExportShowUI -v false;
+
+	print "Before fbx export\n";
+	FBXExport -f "/Users/scottblyth/Desktop/GitHub/Inferno-2/Inferno/Temp/ExportedFBXFile.fbx";
+	print "after fbx export\n";
+}
+else
+	print "Could not open Maya file.";
+
+sysFile -delete "/Users/scottblyth/Desktop/GitHub/Inferno-2/Inferno/Temp/CommandPipe";
+
+$donepipeKill = `fopen "/Users/scottblyth/Desktop/GitHub/Inferno-2/Inferno/Temp/SyncPipeKill" "w"`;
+fwrite $donepipeKill "Done";
+fclose $donepipeKill;

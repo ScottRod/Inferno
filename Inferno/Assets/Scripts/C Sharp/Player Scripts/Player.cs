@@ -12,7 +12,7 @@ public class Player : MonoBehaviour {
 
 	public Material NormalCameraMaterial; // the camera rendering noramlly
 
-	public Material LavaCameraMaterial; // what the camera looks like when the player is under lava or buring
+	public Material LavaCameraMaterial; // what the camera looks like when the player is under lava or burning 
 
 	public int Score = 0;
 
@@ -42,6 +42,10 @@ public class Player : MonoBehaviour {
 
 	public string EquippedSpell = "Aqua Ball"; // the current equipped spell 
 
+	public string EquippedWeapon = ""; // The current equipped weapon as u can see
+
+	public GameObject AquaSword; // the aqua sword game object
+
 	public GameObject MagicaText; // the text that displays the current magica text
 
 	public float MoveSpeed = 10.0f; // the player speed in meters per second
@@ -54,10 +58,34 @@ public class Player : MonoBehaviour {
 
 	public float RotateYaw = 0.0f;
 
+
+	void SpawnWeapon(string newWeapon) {
+
+		//Destroy (CurrentWeapon); 
+
+		if (newWeapon == "Aqua Sword") {
+
+			GameObject newWeaponObj = Instantiate (AquaSword, Playercamera.transform.position + (Vector3.right*1.25f) + Vector3.back, Quaternion.identity);
+
+			newWeaponObj.transform.Rotate (0, 90, 0);
+
+			newWeaponObj.transform.parent = Playercamera.transform;
+
+
+
+		}
+
+		EquippedWeapon = newWeapon;
+
+
+	}
+
 	// Use this for initialization
 	void Start () {
 
+		EquippedWeapon = PlayerPrefs.GetString ("Equipped Weapon", "Aqua Sword");
 
+		SpawnWeapon (EquippedWeapon);
 
 		Cursor.visible = false;
 
@@ -82,6 +110,14 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		// when x is pressed player will go back to menu (Purgatory)
+
+		if (Input.GetKeyDown (KeyCode.X)) {
+
+			SceneManager.LoadScene ("Purgatory"); 
+
+		}
 
 		Magica += Time.deltaTime * MagicaRegenSpeed;
 
@@ -161,7 +197,7 @@ public class Player : MonoBehaviour {
 
 		SpellCastDelay -= Time.deltaTime;
 
-		if (Input.GetMouseButtonDown(0) && EquippedSpell == "Aqua Ball" && Magica > 10 && SpellCastDelay <= 0) { // when the left mouse is clicked
+		if (Input.GetMouseButtonDown(1) && EquippedSpell == "Aqua Ball" && Magica > 10 && SpellCastDelay <= 0) { // when the left mouse is clicked
 
 			Magica -= 10.0f;
 
