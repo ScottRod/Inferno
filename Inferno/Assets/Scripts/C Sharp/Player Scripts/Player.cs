@@ -359,7 +359,7 @@ public class Player : MonoBehaviour {
 
 		if(other.gameObject.tag == "Fire Ball") { 
 
-			Health -= 25.0f;
+		     Health -= 25.0f;
 
  			Destroy(other.gameObject);
 

@@ -14,5 +14,5 @@
 Ideas \
 \
 \
-\
+Health regeneration one point per second\
 }

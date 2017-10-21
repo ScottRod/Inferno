@@ -1921,6 +1921,14 @@ Prefab:
       propertyPath: m_Name
       value: Isengard (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1230635857012266, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967078323213042, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d683c68fa968044aaacc34ba6dcba4c5, type: 2}
   m_IsPrefabParent: 0

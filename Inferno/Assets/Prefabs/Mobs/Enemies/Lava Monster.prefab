@@ -180,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShootObj: {fileID: 1125664823650826, guid: 65acfb4e4da4448cf870c9fed1395940, type: 2}
   Target: {fileID: 0}
-  ShootDelayRange: {x: 3, y: 5}
+  ShootDelayRange: {x: 3, y: 6}
   Velocity: 1500
   DestroyDelay: 5
 --- !u!114 &114715109913977440
