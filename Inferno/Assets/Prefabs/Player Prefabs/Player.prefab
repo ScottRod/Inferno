@@ -405,6 +405,9 @@ MonoBehaviour:
   AquaObject: {fileID: 1243404867730958, guid: 05845f5f979f5489196741b645e58b38, type: 2}
   EquippedSpell: Aqua Ball
   EquippedWeapon: 
+  InventoryObj: {fileID: 0}
+  WeaponText: {fileID: 0}
+  SpellText: {fileID: 0}
   AquaSword: {fileID: 1123315651662892, guid: 334fb669fdeeb48239ca8f19dfcd2df7, type: 2}
   MagicaText: {fileID: 0}
   MoveSpeed: 4

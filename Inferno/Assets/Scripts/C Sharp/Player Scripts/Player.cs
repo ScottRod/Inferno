@@ -40,9 +40,19 @@ public class Player : MonoBehaviour {
 
 	public GameObject AquaObject; // the water ball thing that the player can shoot
 
-	public string EquippedSpell = "Aqua Ball"; // the current equipped spell 
+	public string EquippedSpell = ""; // the current equipped spell 
+
+	public GameObject CurrentWeapon; // current gameobject weapon
 
 	public string EquippedWeapon = ""; // The current equipped weapon as u can see
+
+	public GameObject InventoryObj;
+
+	public GameObject WeaponText;
+
+	public GameObject SpellText;
+
+	//bool InventoryShowing = false; // whether the player is looking at the inventory
 
 	public GameObject AquaSword; // the aqua sword game object
 
@@ -59,9 +69,9 @@ public class Player : MonoBehaviour {
 	public float RotateYaw = 0.0f;
 
 
-	void SpawnWeapon(string newWeapon) {
+	public void SpawnWeapon(string newWeapon) {
 
-		//Destroy (CurrentWeapon); 
+		Destroy (CurrentWeapon); 
 
 		if (newWeapon == "Aqua Sword") {
 
@@ -71,7 +81,7 @@ public class Player : MonoBehaviour {
 
 			newWeaponObj.transform.parent = Playercamera.transform;
 
-
+			CurrentWeapon = newWeaponObj;
 
 		}
 
@@ -82,6 +92,8 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		EquippedSpell = PlayerPrefs.GetString ("Equipped Spell", "Aqua Ball");
 
 		EquippedWeapon = PlayerPrefs.GetString ("Equipped Weapon", "Aqua Sword");
 
@@ -111,11 +123,65 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (InventoryObj.activeSelf == true) {
+
+			Cursor.lockState = CursorLockMode.None;
+
+			Cursor.visible = true;
+
+			// updates the equipped spell and weapon text to display the current spell and weapon that the player will be using 
+
+			SpellText.GetComponent<Text> ().text = "Spell: " + EquippedSpell;
+
+			WeaponText.GetComponent<Text> ().text = "Weapon: " + EquippedWeapon;
+
+			Time.timeScale = 0.0f;
+
+		} else {
+
+			Cursor.visible = false;
+
+			Cursor.lockState = CursorLockMode.Locked;
+
+			Time.timeScale = 1.0f;
+
+		}
+
+		if (Input.GetKeyDown ("1")) {
+
+			bool x = false;
+
+			if (InventoryObj.activeSelf == true && x == false) {
+
+				InventoryObj.SetActive (false);
+
+				x = true;
+
+			}
+
+			if (InventoryObj.activeSelf == false && x == false) {
+
+				InventoryObj.SetActive (true);
+
+				x = true;
+
+			}
+
+		}
+
 		// when x is pressed player will go back to menu (Purgatory)
 
 		if (Input.GetKeyDown (KeyCode.X)) {
 
 			SceneManager.LoadScene ("Purgatory"); 
+
+		}
+
+		// when the escape key is pressed then close the progam
+
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+
+			Application.Quit ();
 
 		}
 
@@ -153,11 +219,11 @@ public class Player : MonoBehaviour {
 
 			// look controls x
 
-			transform.Rotate (0, Input.GetAxis ("Mouse X") * LookSenstivity.x, 0);
+			transform.Rotate (0, Input.GetAxis ("Mouse X") * LookSenstivity.x * (Time.deltaTime*60.0f), 0);
 
 			// look controls y
 
-			RotateYaw -= Input.GetAxis ("Mouse Y") * LookSenstivity.y;
+			RotateYaw -= Input.GetAxis ("Mouse Y") * LookSenstivity.y * (Time.deltaTime*60.0f);
 
 			RotateYaw = Mathf.Clamp (RotateYaw, -85, 90);
 
