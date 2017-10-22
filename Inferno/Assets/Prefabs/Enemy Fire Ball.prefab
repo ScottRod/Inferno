@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33825606690378952}
   - component: {fileID: 135590703303922336}
   - component: {fileID: 23219798723347664}
+  - component: {fileID: 114734713749706898}
   m_Layer: 0
   m_Name: Enemy Fire Ball
   m_TagString: Fire Ball
@@ -81,6 +82,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1125664823650826}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114734713749706898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125664823650826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4779005407bb6451ea802afa1ccbc1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 25
 --- !u!135 &135590703303922336
 SphereCollider:
   m_ObjectHideFlags: 1

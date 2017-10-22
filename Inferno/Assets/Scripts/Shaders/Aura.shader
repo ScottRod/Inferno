@@ -5,7 +5,7 @@
 //
 //
 
-Shader "Custom/Enviroment/Aura" {
+Shader "Custom/Magic/Aura" {
 
    Properties {
 

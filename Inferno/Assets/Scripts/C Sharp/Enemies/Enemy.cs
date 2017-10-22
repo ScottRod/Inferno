@@ -28,6 +28,16 @@ public class Enemy : MonoBehaviour {
 
 	}
 
+	void OnTriggerEnter(Collider other) {
+
+		if (other.tag == "Blade") {
+
+			Health -= other.GetComponent<Weapon> ().Damage;
+
+		}
+
+	}
+
 	void OnTriggerStay(Collider other) {
 		
 

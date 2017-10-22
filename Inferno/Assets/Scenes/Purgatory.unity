@@ -801,6 +801,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fe4a05d8cc4834fad96f4323e7b1fbc6, type: 2}
+    - target: {fileID: 114774762994935174, guid: 59149a619eede49cf95a73639c698536,
+        type: 2}
+      propertyPath: LevelName
+      value: Tutorial
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59149a619eede49cf95a73639c698536, type: 2}
   m_IsPrefabParent: 0

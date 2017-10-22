@@ -28,20 +28,19 @@ public class Portal : MonoBehaviour {
 	public string SceneToLoad;
 
 
-
 	// Use this for initialization
 	void Start () {
+
+		if (PlayerPrefs.GetInt (LevelName, 0) != 0) {
+
+			Active = true;
+
+		}
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		if (PlayerPrefs.GetInt (LevelName, 0) != 0) {
-
-			Active = false;
-
-		}
 
 		if (Active == true) {
 
