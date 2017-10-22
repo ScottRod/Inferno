@@ -361,7 +361,7 @@ public class Player : MonoBehaviour {
 
 		     Health -= 25.0f;
 
- 			Destroy(other.gameObject);
+ 			 Destroy(other.gameObject);
 
 		}
 
