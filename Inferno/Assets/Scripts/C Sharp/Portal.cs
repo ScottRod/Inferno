@@ -28,20 +28,25 @@ public class Portal : MonoBehaviour {
 	public string SceneToLoad;
 
 
-	// Use this for initialization
 	void Start () {
 
-		PlayerPrefs.SetInt ("0", 1);
+		PlayerPrefs.SetInt ("0", 1); // 0 is the first level (the tutorial)
 
-		if (PlayerPrefs.GetInt (LevelName, 0) > 0) {
+		// even is the portal that accesses the level (including 0)
+
+		// odd is finishing the level
+
+		// note that for the score pass script on the portals that access the level set the required kill count to 1
+
+		if (PlayerPrefs.GetInt (LevelName.ToString(), 0) != 0) {
 
 			Active = true;
 
 		}
 		
 	}
-	
-	// Update is called once per frame
+
+
 	void Update () {
 
 		if (Active == true) {

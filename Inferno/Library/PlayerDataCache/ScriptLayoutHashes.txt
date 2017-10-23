@@ -155,7 +155,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 5b8cb5d6fb98044e0a71ebd272e30b45 Assembly-CSharp.dll:.Inventory
 2675441011e54454dc269329b35fb34e Assembly-CSharp.dll:.Portal
 2c62b9ae79b8b54dd7b55fa7d311452b Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.Water
-6c31c84a0e033d50c1611d80a931d39c Assembly-CSharp.dll:.Player
+479470d1cdc98bacb7fdb3a9f60a1b30 Assembly-CSharp.dll:.Player
 2636e852a6692498945ad679f2c2756c Assembly-CSharp.dll:.MoveTo
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 5f2ad81aa8994e8fbe25d1e57afe6773 UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController

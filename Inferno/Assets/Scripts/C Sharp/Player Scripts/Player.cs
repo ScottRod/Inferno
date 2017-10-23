@@ -8,6 +8,8 @@ public class Player : MonoBehaviour {
 
 	CharacterController cc; // player's character controller, used to move the player and make gravity effect it
 
+	public bool GodMode = false; // for quickly testing out the game e.g if u need to quickly get to a spot where there is a bug 
+
 	public GameObject Playercamera;
 
 	public Material NormalCameraMaterial; // the camera rendering noramlly
@@ -128,6 +130,22 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (GodMode == true) {
+
+			// makes the player op as fuck 
+
+			Health = Mathf.Infinity;
+
+			MagicaRegenSpeed = Mathf.Infinity;
+
+			Stamina = Mathf.Infinity;
+
+			SpellCastDelay = 0.0f;
+
+			CurrentWeapon.GetComponent<Weapon> ().Damage = Mathf.Infinity;
+
+		}
 
 		if (InventoryObj.activeSelf == true) {
 
@@ -287,6 +305,20 @@ public class Player : MonoBehaviour {
 
 			SpellCastDelay = 0.5f;
 		
+		}
+
+		if (Input.GetMouseButton(1) && EquippedSpell == "Aqua Ball" && Magica >= 15 && SpellCastDelay <= 0 && InventoryObj.activeSelf == false && GodMode == true) { 
+
+			Magica -= 15.0f;
+
+			GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * 1.5f + new Vector3(0,Playercamera.transform.localPosition.y,0)), Quaternion.identity);
+
+			newAqua.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
+
+			Destroy (newAqua, 5.0f);
+
+			//SpellCastDelay = 0.5f;
+
 		}
 
 		// updates the text to display the current Health, stamina and magica
