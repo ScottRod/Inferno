@@ -31,7 +31,9 @@ public class Portal : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		if (PlayerPrefs.GetInt (LevelName, 0) != 0) {
+		PlayerPrefs.SetInt ("0", 1);
+
+		if (PlayerPrefs.GetInt (LevelName, 0) > 0) {
 
 			Active = true;
 
@@ -45,6 +47,12 @@ public class Portal : MonoBehaviour {
 		if (Active == true) {
 
 			if (Vector3.Distance (PlayerObj.transform.position, transform.position) < (transform.localScale.y * PortalMat.GetFloat (RingSizeName)) / 3) {
+
+				int y = int.Parse(LevelName) + 1;
+
+				string z = y.ToString ();
+
+				PlayerPrefs.SetInt (z, 1); 
 
 				SceneManager.LoadScene (SceneToLoad);
 

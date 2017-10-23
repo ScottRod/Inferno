@@ -15,6 +15,8 @@ public class Inventory : MonoBehaviour {
 
 	bool SpellActive = false;
 
+	public bool ChangingWeapon = false;
+
 	void Start() {
 
 		PlayerPrefs.SetInt ("", 1);
@@ -55,7 +57,7 @@ public class Inventory : MonoBehaviour {
 
 	public void EquipNewWeapon() {
 
-		if (WeaponActive == true) {
+		if (WeaponActive == true && ChangingWeapon == true) {
 
 			PlayerObj.GetComponent<Player> ().SpawnWeapon (WeaponName);
 
@@ -65,7 +67,7 @@ public class Inventory : MonoBehaviour {
 
 	public void EquipMagic() {
 
-		if (SpellActive == true) {
+		if (SpellActive == true && ChangingWeapon == false) {
 
 			PlayerObj.GetComponent<Player> ().EquippedSpell = SpellName;
 

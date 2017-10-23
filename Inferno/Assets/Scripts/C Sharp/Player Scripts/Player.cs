@@ -64,7 +64,7 @@ public class Player : MonoBehaviour {
 
 	Vector3 speed = new Vector3(0,0,0); // current player speed in xyz
 
-	public Vector2 LookSenstivity = new Vector3(1,1);
+	public Vector2 LookSenstivity = new Vector2(1,1);
 
 	public float RotateYaw = 0.0f;
 
@@ -73,11 +73,17 @@ public class Player : MonoBehaviour {
 
 		Destroy (CurrentWeapon); 
 
+		Playercamera.transform.localRotation = Quaternion.Euler (0, 0, 0);
+
 		if (newWeapon == "Aqua Sword") {
 
-			GameObject newWeaponObj = Instantiate (AquaSword, Playercamera.transform.position + (Vector3.right*1.5f) + Vector3.back, Quaternion.identity);
+			GameObject newWeaponObj = Instantiate (AquaSword, transform.position, Quaternion.identity);
 
-			newWeaponObj.transform.Rotate (0, 90, 0);
+			newWeaponObj.transform.Translate (transform.rotation * Vector3.forward * 2f);
+
+			newWeaponObj.transform.Translate (transform.rotation * Vector3.right);
+
+			newWeaponObj.transform.rotation = transform.rotation;
 
 			newWeaponObj.transform.parent = Playercamera.transform;
 
