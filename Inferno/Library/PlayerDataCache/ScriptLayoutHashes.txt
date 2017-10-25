@@ -133,6 +133,7 @@ cfa93710d56cd4da2a3b2eec27bc1139 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 97f3f2eee235771b3d0dd28fcccb62f7 Assembly-CSharp.dll:.LookAt
 901358948f3bb8beffef50ad443b110d Assembly-CSharp.dll:.Enemy
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.MobileControlRig
+bf2f97dc6e5bc21660c24fe1d9e1b531 Assembly-CSharp.dll:.Explosion
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ObjectResetter
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.WaterBasic
 215ef884aea9cd5a7d18b553cab90485 Assembly-CSharp.dll:.ShootTo
@@ -179,3 +180,5 @@ b5f094a5be143968f3f47eb30099c49d Assembly-CSharp.dll:.Shoot
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FPSCounter
 97bc52248e569519d08456e477968991 Assembly-CSharp.dll:.UpdatePosition
 0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
+200210ca9e3ab24dcd353d97804c7268 Assembly-CSharp.dll:.Lava
+aac4ecd57dfa7319f8ee73f0bac0e022 Assembly-CSharp.dll:.LavaSpreading

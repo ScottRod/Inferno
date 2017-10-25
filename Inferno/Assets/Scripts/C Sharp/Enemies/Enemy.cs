@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 
-		if (other.tag == "Blade") {
+		if (other.tag == "Blade" && other.GetComponent<Weapon>().Swinging == false) {
 
 			Health -= other.GetComponent<Weapon> ().Damage;
 
