@@ -113,6 +113,8 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 f033624f5b63b56458205994a11e33c2 Assembly-CSharp.dll:.DialogueBox
 6e714b24188cddfc9ae1e07d05ed4ddd Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ParticleSystemDestroyer
 879b3df2ab67cfd00172f75f85a7a583 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SimpleMouseRotator
+9cc517c85d6a6bf30f60b70102a04e54 Assembly-CSharp.dll:.Chests
+aac4ecd57dfa7319f8ee73f0bac0e022 Assembly-CSharp.dll:.LavaSpreading
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -179,6 +181,5 @@ a8796ecdc9d5c260bbe32f30c4b10708 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 b5f094a5be143968f3f47eb30099c49d Assembly-CSharp.dll:.Shoot
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FPSCounter
 97bc52248e569519d08456e477968991 Assembly-CSharp.dll:.UpdatePosition
-0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
 200210ca9e3ab24dcd353d97804c7268 Assembly-CSharp.dll:.Lava
-aac4ecd57dfa7319f8ee73f0bac0e022 Assembly-CSharp.dll:.LavaSpreading
+0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
