@@ -319,7 +319,7 @@ public class Player : MonoBehaviour {
 
 		if (Input.GetMouseButton(1) && EquippedSpell == "Aqua Ball" && Magica >= 15 && SpellCastDelay <= 0 && InventoryObj.activeSelf == false && GodMode == true) { 
 
-			Magica -= 15.0f;
+			//Magica -= 15.0f;
 
 			GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * 1.5f + new Vector3(0,Playercamera.transform.localPosition.y,0)), Quaternion.identity);
 

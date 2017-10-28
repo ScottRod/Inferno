@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour {
 
 	bool WeaponActive = false;
 
-	public bool SpellActive = false;
+	bool SpellActive = false;
 
 	public bool WeaponType = false;
 
@@ -32,6 +32,7 @@ public class Inventory : MonoBehaviour {
 		//PlayerPrefs.SetInt ("Aqua Ball", 0);
 
 		if (WeaponType == true) {
+			
 			if (PlayerPrefs.GetInt (WeaponName, 0) == 0) {
 
 				WeaponActive = false;
@@ -127,8 +128,8 @@ public class Inventory : MonoBehaviour {
 
 	public void EquipNewWeapon() {
 
-		if (WeaponActive == true && ChangingWeapon == true) {
-
+		if (WeaponActive == true && WeaponType == true) {
+			
 			PlayerObj.GetComponent<Player> ().SpawnWeapon (WeaponName);
 
 			PlayerPrefs.SetString ("Equipped Weapon", WeaponName);
@@ -139,7 +140,7 @@ public class Inventory : MonoBehaviour {
 
 	public void EquipMagic() {
 
-		if (SpellActive == true && ChangingWeapon == false) {
+		if (SpellActive == true && WeaponType == false) {
 
 			PlayerObj.GetComponent<Player> ().EquippedSpell = SpellName;
 
