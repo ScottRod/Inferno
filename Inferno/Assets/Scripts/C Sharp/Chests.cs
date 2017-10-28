@@ -22,18 +22,23 @@ public class Chests : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		if (PlayerPrefs.GetInt (ItemName) == 0) { 
 			
-		newItemObj = Instantiate (ItemObj, transform.position + (transform.rotation * (Vector3.left + Vector3.forward)), Quaternion.identity);
+			newItemObj = Instantiate (ItemObj, transform.position + (transform.rotation * (Vector3.left + Vector3.forward)), Quaternion.identity);
 
-		newItemObj.transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
+			newItemObj.transform.localScale = new Vector3 (0.75f, 0.75f, 0.75f);
 
-		newItemObj.transform.Rotate (25, 0, 0);
+			newItemObj.transform.Rotate (25, 0, 0);
 
-		if (newItemObj.GetComponent<Weapon> ()) {
+			if (newItemObj.GetComponent<Weapon> ()) {
 
-			newItemObj.GetComponent<Weapon> ().enabled = false;
+				newItemObj.GetComponent<Weapon> ().enabled = false;
+
+			}
 
 		}
+
 		
 	}
 
@@ -60,7 +65,7 @@ public class Chests : MonoBehaviour {
 
 			transform.Rotate (0, -OpenSpeed * Time.deltaTime, 0); // rotates on the y because the mesh has already been rotated
 
-		} else if(Open == false && transform.localRotation.x < 0.707) {
+		} else if(Open == false && transform.localRotation.x < 0.7071) {
 
 			transform.Rotate (0, OpenSpeed * Time.deltaTime, 0);
 

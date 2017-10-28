@@ -8,6 +8,8 @@
 
 		_NoiseTex("Noise Texture", 2D) = "white" {}
 
+		_BumpMap("Normal", 2D) = "bump" {}
+
 		_NewColour("Lit Colour", Color) = (1,1,1,1)
 
 		_Darkness("Darkness", Range(1, 10)) = 3
@@ -36,6 +38,7 @@
 
 		struct Input {
 			float2 uv_MainTex;
+			float2 uv_BumpMap;
 		};
 
 		half _Glossiness;
@@ -54,6 +57,8 @@
 
 		uniform sampler2D _NoiseTex;
 
+		uniform sampler2D _BumpMap;
+
 		UNITY_INSTANCING_CBUFFER_START(Props)
 
 		UNITY_INSTANCING_CBUFFER_END
@@ -65,6 +70,8 @@
 			fixed4 PatternCol = tex2D(_LitPattern, IN.uv_MainTex);
 
 			fixed4 NoiseCol = tex2D(_NoiseTex, IN.uv_MainTex);
+
+			fixed4 NormalColour = tex2D(_BumpMap, IN.uv_BumpMap);
 
 			if(PatternCol.r > 0.1 && PatternCol.b > 0.1 && PatternCol.g > 0.1) {
 
@@ -78,7 +85,11 @@
 
 			}
 
+			NormalColour = float4(0,0,0,0);
+
 			}
+
+			o.Normal = UnpackNormal(NormalColour);
 
 			o.Albedo = col.rgb;
 
