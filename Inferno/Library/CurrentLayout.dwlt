@@ -368,7 +368,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 5898feffe898feff589bfeff08c8feff1ac8feff3016ffffc616ffff3619ffffe645fffff845ffff9277ffff3078ffffa07affff50a7ffff62a7ffff1afcffff00000000
+    m_ExpandedIDs: 406cfeffba6cfeff2e6ffeffe29bfefff89bfeff1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -417,15 +417,15 @@ MonoBehaviour:
     y: 94
     width: 626
     height: 364
-  m_SceneLighting: 1
+  m_SceneLighting: 0
   lastFramingTime: 1197.4666799902916
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 211.71825, y: 1.7495334, z: 274.3973}
+    m_Target: {x: 213.09059, y: 1.7670603, z: 272.64673}
     speed: 2
-    m_Value: {x: 211.71825, y: 1.7495334, z: 274.3973}
+    m_Value: {x: 213.09059, y: 1.7670603, z: 272.64673}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -448,9 +448,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.03818651, y: 0.66704136, z: -0.03426992, w: 0.74325186}
+    m_Target: {x: 0.03291085, y: 0.73125315, z: -0.03536977, w: 0.6803931}
     speed: 2
-    m_Value: {x: 0.03818651, y: 0.66704136, z: -0.03426992, w: 0.74325186}
+    m_Value: {x: 0.03291085, y: 0.73125315, z: -0.03536977, w: 0.6803931}
   m_Size:
     m_Target: 8.841661
     speed: 2
@@ -529,18 +529,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/C Sharp
+    - Assets/Physics Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/C Sharp
+  - Assets/Physics Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/scottblyth/Desktop/GitHub/Inferno-2/Inferno
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 347}
-    m_SelectedIDs: be270000
-    m_LastClickedID: 10174
+    scrollPos: {x: 0, y: 184.98828}
+    m_SelectedIDs: 58290000
+    m_LastClickedID: 10584
     m_ExpandedIDs: 000000008e26000098260000482700004e270000be270000ea270000fa2700005e280000dc28000024290000c829000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -679,7 +679,7 @@ MonoBehaviour:
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
-    m_CachedPref: 535
+    m_CachedPref: -535
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
