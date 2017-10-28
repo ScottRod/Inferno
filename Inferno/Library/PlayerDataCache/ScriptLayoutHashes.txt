@@ -113,7 +113,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 f033624f5b63b56458205994a11e33c2 Assembly-CSharp.dll:.DialogueBox
 6e714b24188cddfc9ae1e07d05ed4ddd Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ParticleSystemDestroyer
 879b3df2ab67cfd00172f75f85a7a583 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SimpleMouseRotator
-9cc517c85d6a6bf30f60b70102a04e54 Assembly-CSharp.dll:.Chests
+57e3e554f8c684f040819687070f936b Assembly-CSharp.dll:.Chests
 aac4ecd57dfa7319f8ee73f0bac0e022 Assembly-CSharp.dll:.LavaSpreading
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
@@ -155,7 +155,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 21984f001d5a114ee9fbf62810ee8eb7 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.SpecularLighting
 2dbfd4f7836c7f6a79e17be5f4bf7969 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.WaypointCircuit
-5b8cb5d6fb98044e0a71ebd272e30b45 Assembly-CSharp.dll:.Inventory
+4a7d01fa1b494f427e45dc34e5c02ed5 Assembly-CSharp.dll:.Inventory
 2675441011e54454dc269329b35fb34e Assembly-CSharp.dll:.Portal
 2c62b9ae79b8b54dd7b55fa7d311452b Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.Water
 479470d1cdc98bacb7fdb3a9f60a1b30 Assembly-CSharp.dll:.Player

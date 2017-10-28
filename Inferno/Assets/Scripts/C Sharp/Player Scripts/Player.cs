@@ -101,9 +101,17 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		EquippedSpell = PlayerPrefs.GetString ("Equipped Spell", "Aqua Ball");
+		//PlayerPrefs.SetInt ("Aqua Ball", 0);
 
-		EquippedWeapon = PlayerPrefs.GetString ("Equipped Weapon", "Aqua Sword");
+		//PlayerPrefs.SetString ("Equipped Spell", "");
+
+		//EquippedSpell = PlayerPrefs.GetString ("Equipped Spell", "");
+
+        //EquippedWeapon = PlayerPrefs.GetString ("Equipped Weapon", "");
+
+		EquippedWeapon = PlayerPrefs.GetString ("Equipped Weapon", "");
+
+		EquippedSpell = PlayerPrefs.GetString ("Equipped Spell", "");
 
 		SpawnWeapon (EquippedWeapon);
 
@@ -292,6 +300,8 @@ public class Player : MonoBehaviour {
 		}
 
 		SpellCastDelay -= Time.deltaTime;
+
+		//Debug.Log (EquippedSpell);
 
 		if (Input.GetMouseButtonDown(1) && EquippedSpell == "Aqua Ball" && Magica >= 15 && SpellCastDelay <= 0 && InventoryObj.activeSelf == false) { // when the left mouse is clicked
 

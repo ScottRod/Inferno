@@ -13,7 +13,9 @@ public class Inventory : MonoBehaviour {
 
 	bool WeaponActive = false;
 
-	bool SpellActive = false;
+	public bool SpellActive = false;
+
+	public bool WeaponType = false;
 
 	public bool ChangingWeapon = false;
 
@@ -21,35 +23,103 @@ public class Inventory : MonoBehaviour {
 
 		PlayerPrefs.SetInt ("", 1);
 
-		PlayerPrefs.SetInt ("Aqua Sword", 1);
+		//PlayerPrefs.DeleteAll ();
 
-		PlayerPrefs.SetInt ("Aqua Ball", 1);
+		// so the player actually has some stuff to attack with
 
-		if (PlayerPrefs.GetInt (WeaponName, 0) == 0) {
+		//PlayerPrefs.SetInt ("Aqua Sword", 0);
 
-			WeaponActive = false;
+		//PlayerPrefs.SetInt ("Aqua Ball", 0);
 
-			GetComponent<Image> ().enabled = false;
+		if (WeaponType == true) {
+			if (PlayerPrefs.GetInt (WeaponName, 0) == 0) {
 
-			GetComponentInChildren<Text> ().enabled = false;
+				WeaponActive = false;
 
-		} else {
+				GetComponent<Image> ().enabled = false;
 
-			WeaponActive = true;
+				GetComponentInChildren<Text> ().enabled = false;
+
+			} else {
+
+				GetComponent<Image> ().enabled = true;
+
+				GetComponentInChildren<Text> ().enabled = true;
+
+				WeaponActive = true;
+
+			}
+
 
 		}
 
-		if (PlayerPrefs.GetInt (SpellName, 0) == 0) {
+		if (WeaponType == false) {
 
-			SpellActive = false;
+			if (PlayerPrefs.GetInt (SpellName, 0) == 0) {
 
-			GetComponent<Image> ().enabled = false;
+				SpellActive = false;
 
-			GetComponent<Text> ().enabled = false;
+				GetComponent<Image> ().enabled = false;
 
-		} else {
+				GetComponentInChildren<Text> ().enabled = false;
 
-			SpellActive = true;
+			} else {
+
+				GetComponent<Image> ().enabled = true;
+
+				GetComponentInChildren<Text> ().enabled = true;
+
+				SpellActive = true;
+
+			}
+
+		}
+
+	}
+
+	void Update() {
+
+		if (WeaponType == true) {
+
+			if (PlayerPrefs.GetInt (WeaponName, 0) == 0) {
+
+				WeaponActive = false;
+
+				GetComponent<Image> ().enabled = false;
+
+				GetComponentInChildren<Text> ().enabled = false;
+
+			} else {
+
+				GetComponent<Image> ().enabled = true;
+
+				GetComponentInChildren<Text> ().enabled = true;
+
+				WeaponActive = true;
+
+			}
+
+		}
+
+		if (WeaponType == false) {
+
+			if (PlayerPrefs.GetInt (SpellName, 0) == 0) {
+
+				SpellActive = false;
+
+				GetComponent<Image> ().enabled = false;
+
+				GetComponentInChildren<Text> ().enabled = false;
+
+			} else {
+
+				GetComponent<Image> ().enabled = true;
+
+				GetComponentInChildren<Text> ().enabled = true;
+
+				SpellActive = true;
+
+			}
 
 		}
 
@@ -61,6 +131,8 @@ public class Inventory : MonoBehaviour {
 
 			PlayerObj.GetComponent<Player> ().SpawnWeapon (WeaponName);
 
+			PlayerPrefs.SetString ("Equipped Weapon", WeaponName);
+
 		}
 
 	}
@@ -70,6 +142,8 @@ public class Inventory : MonoBehaviour {
 		if (SpellActive == true && ChangingWeapon == false) {
 
 			PlayerObj.GetComponent<Player> ().EquippedSpell = SpellName;
+
+			PlayerPrefs.SetString ("Equipped Spell", SpellName);
 
 		}
 

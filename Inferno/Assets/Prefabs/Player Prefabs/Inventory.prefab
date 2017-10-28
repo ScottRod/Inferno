@@ -436,6 +436,7 @@ MonoBehaviour:
   PlayerObj: {fileID: 0}
   WeaponName: Aqua Sword
   SpellName: 
+  WeaponType: 1
   ChangingWeapon: 1
 --- !u!114 &114718881360476902
 MonoBehaviour:
@@ -478,6 +479,7 @@ MonoBehaviour:
   PlayerObj: {fileID: 0}
   WeaponName: 
   SpellName: Aqua Ball
+  WeaponType: 0
   ChangingWeapon: 0
 --- !u!114 &114830712344855952
 MonoBehaviour:
