@@ -12,8 +12,16 @@ public class Weapon : MonoBehaviour {
 
 	public bool Active = true;
 
+	string CurrentRemote; 
+
 	// Use this for initialization
 	void Start () {
+
+		for (int i = 0; i < Input.GetJoystickNames ().Length; i++) {
+
+			CurrentRemote = Input.GetJoystickNames () [i];
+
+		}
 		
 	}
 
@@ -35,6 +43,16 @@ public class Weapon : MonoBehaviour {
 		if (Input.GetMouseButton (0) && Active == true) {
 
 			Swinging = true;
+
+		}
+
+		if (CurrentRemote == "Sony Computer Entertainment Wireless Controller") {
+
+			if (Input.GetButton ("Attack PS4") && Active == true) {
+
+				Swinging = true;
+
+			}
 
 		}
 

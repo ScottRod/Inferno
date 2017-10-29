@@ -20,8 +20,23 @@ public class Chests : MonoBehaviour {
 
 	bool Open = false;
 
+	string CurrentRemote; // the current controller that the player is using 
+
+	/*
+
+Pick Up PS4
+
+
+	*/
+
 	// Use this for initialization
 	void Start () {
+
+		for (int i = 0; i < Input.GetJoystickNames ().Length; i++) {
+
+			CurrentRemote = Input.GetJoystickNames () [i];
+
+		}
 
 		if (PlayerPrefs.GetInt (ItemName) == 0) { 
 			
@@ -76,6 +91,16 @@ public class Chests : MonoBehaviour {
 			if (Vector3.Distance (PlayerObj.transform.position, newItemObj.transform.position) < 3.0f && Input.GetKeyDown (KeyCode.E)) {
 
 				GetItem ();
+
+			}
+
+			if (CurrentRemote == "Sony Computer Entertainment Wireless Controller") {
+
+				if (Vector3.Distance (PlayerObj.transform.position, newItemObj.transform.position) < 3.0f && Input.GetButtonDown("Pick Up PS4")) {
+
+					GetItem ();
+
+				}
 
 			}
 

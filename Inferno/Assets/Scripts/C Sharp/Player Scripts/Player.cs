@@ -20,6 +20,8 @@ public class Player : MonoBehaviour {
 
 	public string CurrentScene = "Level 1";
 
+	string CurrentRemote; // stores what the controller the player is currently using  
+
 	public float Gravity = 1.0f; // gravity strength
 
 	public float JumpPower = 10.0f;
@@ -70,7 +72,6 @@ public class Player : MonoBehaviour {
 
 	public float RotateYaw = 0.0f;
 
-
 	public void SpawnWeapon(string newWeapon) {
 
 		Destroy (CurrentWeapon); 
@@ -116,6 +117,15 @@ public class Player : MonoBehaviour {
 		//EquippedSpell = PlayerPrefs.GetString ("Equipped Spell", "");
 
         //EquippedWeapon = PlayerPrefs.GetString ("Equipped Weapon", "");
+
+
+		for (int i = 0; i < Input.GetJoystickNames ().Length; i++) {
+
+			CurrentRemote = Input.GetJoystickNames () [i];
+
+			Debug.Log (CurrentRemote);
+
+		}
 
 		EquippedWeapon = PlayerPrefs.GetString ("Equipped Weapon", "");
 
@@ -233,7 +243,7 @@ public class Player : MonoBehaviour {
 
 		if (Dead == false) {
 
-			if (Input.GetButtonDown ("Jump") && cc.isGrounded == true && GodMode == false) {
+			if (Input.GetKeyDown (KeyCode.Space) && cc.isGrounded == true && GodMode == false) {
 
 				// makes the player jump
 
@@ -242,7 +252,7 @@ public class Player : MonoBehaviour {
 
 			}
 
-			if (Input.GetButton ("Jump") && GodMode == true) {
+			if (Input.GetKey (KeyCode.Space) && GodMode == true) {
 
 				// makes the player jump
 
@@ -264,6 +274,126 @@ public class Player : MonoBehaviour {
 			// look controls y
 
 			RotateYaw -= Input.GetAxis ("Mouse Y") * LookSenstivity.y * (Time.deltaTime*60.0f);
+
+			// PS4 Controls 
+			///
+
+
+
+			///
+
+			if (CurrentRemote == "Sony Computer Entertainment Wireless Controller") {
+
+				if (Input.GetAxis ("Look X PS4") >= 0.1 || Input.GetAxis("Look X PS4") < -0.1) { 
+
+					transform.Rotate (0, Input.GetAxis ("Look X PS4") * LookSenstivity.x  * 2 * (Time.deltaTime * 60.0f), 0);
+
+				}
+
+				if (Input.GetAxis ("Look Y PS4") > 0.1 || Input.GetAxis ("Look Y PS4") < -0.1) {
+
+					RotateYaw -= Input.GetAxis ("Look Y PS4") * LookSenstivity.y * (Time.deltaTime*60.0f);
+
+				}
+
+				if (Input.GetButtonDown("Ability PS4") && EquippedSpell == "Aqua Ball" && Magica >= 15 && SpellCastDelay <= 0 && InventoryObj.activeSelf == false) { // when the left mouse is clicked
+
+					Magica -= 15.0f;
+
+					GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward + new Vector3(0,Playercamera.transform.localPosition.y,0)), Quaternion.identity);
+
+					newAqua.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
+
+					Destroy (newAqua, 5.0f);
+
+					SpellCastDelay = 0.5f;
+
+				}
+
+				if (Input.GetButton("Ability PS4") && EquippedSpell == "Aqua Ball" && Magica >= 15 && SpellCastDelay <= 0 && InventoryObj.activeSelf == false && GodMode == true) { 
+
+					//Magica -= 15.0f;
+
+					for (int i = 0; i < 25; i++) {
+
+						GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * 1.5f * 15.0f * i + new Vector3 (0, Playercamera.transform.localPosition.y, 0)), Quaternion.identity);
+
+						newAqua.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
+
+						newAqua.transform.localScale = new Vector3 (10.0f, 10.0f, 10.0f);
+
+						Destroy (newAqua, 5.0f);
+
+					}
+
+					//SpellCastDelay = 0.5f;
+
+				}
+					
+				if (Input.GetButtonDown("Jump PS4") && cc.isGrounded == true && GodMode == false) {
+
+					// makes the player jump
+
+					speed.y = JumpPower;
+
+				}
+
+				if (Input.GetButtonDown("Jump PS4") && GodMode == true) {
+
+					// makes the player jump
+
+					speed.y = JumpPower * 3.0f;
+
+
+				}
+
+				//Sprint PS4
+
+				if (Input.GetButton("Sprint PS4") && Stamina >= 1 || Input.GetKey(KeyCode.RightShift) && Stamina >= 0) {
+
+					// speeds up the player speed
+
+					speed.x *= 1.5f;  
+
+					speed.z *= 1.5f; 
+
+					if (GodMode == true) {
+
+						speed.x *= 10;
+
+						speed.z *= 10;
+
+					}
+
+					Stamina -= Time.deltaTime * 15;
+
+				}
+					
+				// Inventory PS4
+
+				if (Input.GetButtonDown("Inventory PS4")) {
+
+					bool x = false;
+
+					if (InventoryObj.activeSelf == true && x == false) {
+
+						InventoryObj.SetActive (false);
+
+						x = true;
+
+					}
+
+					if (InventoryObj.activeSelf == false && x == false) {
+
+						InventoryObj.SetActive (true);
+
+						x = true;
+
+					}
+
+				}
+
+			}
 
 			RotateYaw = Mathf.Clamp (RotateYaw, -85, 90);
 
@@ -331,13 +461,17 @@ public class Player : MonoBehaviour {
 
 			//Magica -= 15.0f;
 
-			GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * 1.5f * 5.0f + new Vector3(0,Playercamera.transform.localPosition.y,0)), Quaternion.identity);
+			for (int i = 0; i < 25; i++) {
 
-			newAqua.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
+				GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * 1.5f * 15.0f * i + new Vector3 (0, Playercamera.transform.localPosition.y, 0)), Quaternion.identity);
 
-			newAqua.transform.localScale = new Vector3(5.0f,5.0f,5.0f);
+				newAqua.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
 
-			Destroy (newAqua, 5.0f);
+				newAqua.transform.localScale = new Vector3 (10.0f, 10.0f, 10.0f);
+
+				Destroy (newAqua, 5.0f);
+
+			}
 
 			//SpellCastDelay = 0.5f;
 
