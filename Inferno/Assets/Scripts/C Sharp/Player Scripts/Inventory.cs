@@ -25,12 +25,6 @@ public class Inventory : MonoBehaviour {
 
 		//PlayerPrefs.DeleteAll ();
 
-		// so the player actually has some stuff to attack with
-
-		//PlayerPrefs.SetInt ("Aqua Sword", 0);
-
-		//PlayerPrefs.SetInt ("Aqua Ball", 0);
-
 		if (WeaponType == true) {
 			
 			if (PlayerPrefs.GetInt (WeaponName, 0) == 0) {

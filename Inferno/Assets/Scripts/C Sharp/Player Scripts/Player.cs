@@ -101,6 +101,8 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+	
+
 		//PlayerPrefs.SetInt ("Aqua Ball", 0);
 
 		//PlayerPrefs.SetString ("Equipped Spell", "");

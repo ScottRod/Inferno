@@ -368,7 +368,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 406cfeffba6cfeff2e6ffeffe29bfefff89bfeff1afcffff00000000
+    m_ExpandedIDs: 888cffff028dffff728fffff22bcffff34bcffff02c4ffff7cc4ffffecc6ffff9cf3ffffaef3ffff1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -423,9 +423,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 213.09059, y: 1.7670603, z: 272.64673}
+    m_Target: {x: 212.98125, y: 0.95935535, z: 272.7837}
     speed: 2
-    m_Value: {x: 213.09059, y: 1.7670603, z: 272.64673}
+    m_Value: {x: 212.98125, y: 0.95935535, z: 272.7837}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -448,13 +448,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.03291085, y: 0.73125315, z: -0.03536977, w: 0.6803931}
+    m_Target: {x: 0.065835446, y: 0.7256553, z: -0.07012015, w: 0.68130255}
     speed: 2
-    m_Value: {x: 0.03291085, y: 0.73125315, z: -0.03536977, w: 0.6803931}
+    m_Value: {x: 0.065835446, y: 0.7256553, z: -0.07012015, w: 0.68130255}
   m_Size:
-    m_Target: 8.841661
+    m_Target: 7.941661
     speed: 2
-    m_Value: 8.841661
+    m_Value: 7.941661
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -529,18 +529,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Physics Materials
+    - Assets/Scripts/C Sharp/Player Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Physics Materials
+  - Assets/Scripts/C Sharp/Player Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/scottblyth/Desktop/GitHub/Inferno-2/Inferno
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 184.98828}
-    m_SelectedIDs: 58290000
-    m_LastClickedID: 10584
+    scrollPos: {x: 0, y: 347}
+    m_SelectedIDs: 9a270000
+    m_LastClickedID: 10138
     m_ExpandedIDs: 000000008e26000098260000482700004e270000be270000ea270000fa2700005e280000dc28000024290000c829000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
