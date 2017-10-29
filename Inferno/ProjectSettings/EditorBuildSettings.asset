@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 80b6441b6d5fc4969a62bd5e47df6028
   - enabled: 1
+    path: Assets/Scenes/First Scene.unity
+    guid: 4ca0c4880da7b4fec8d8cc4aa0dd005e
+  - enabled: 1
     path: Assets/Scenes/Purgatory.unity
     guid: b2fb04260323241e78aeb888b40b9695
   - enabled: 1

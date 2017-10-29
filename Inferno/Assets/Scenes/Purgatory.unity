@@ -438,17 +438,17 @@ Prefab:
         type: 2}
       propertyPath: CameraObj
       value: 
-      objectReference: {fileID: 593858493}
+      objectReference: {fileID: 968452043}
     - target: {fileID: 114774762994935174, guid: 59149a619eede49cf95a73639c698536,
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 2130971009}
+      objectReference: {fileID: 2054646106}
     - target: {fileID: 114844885724716750, guid: 59149a619eede49cf95a73639c698536,
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 2130971009}
+      objectReference: {fileID: 2054646106}
     - target: {fileID: 114844885724716750, guid: 59149a619eede49cf95a73639c698536,
         type: 2}
       propertyPath: RequiredKillCount
@@ -476,11 +476,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59149a619eede49cf95a73639c698536, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &593858493 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1806953628782284, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-    type: 2}
-  m_PrefabInternal: {fileID: 1326902561}
 --- !u!1 &598510243
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Aqua Ball
   ItemObj: {fileID: 1243404867730958, guid: 05845f5f979f5489196741b645e58b38, type: 2}
-  PlayerObj: {fileID: 2130971009}
+  PlayerObj: {fileID: 2054646106}
   OpenDistance: 5
   OpenSpeed: 50
 --- !u!23 &638914126
@@ -812,6 +807,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 932441564}
   m_Mesh: {fileID: 4300010, guid: f9e06d3f59d9b417c81196aec871e93c, type: 3}
+--- !u!1 &968452043 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1806953628782284, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 2016824099}
 --- !u!1 &1055764725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,12 +1064,12 @@ Prefab:
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 2130971009}
+      objectReference: {fileID: 2054646106}
     - target: {fileID: 114666765250840290, guid: b0a5b2167d4e64d52b0cb8bf6b7edda6,
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 2130971009}
+      objectReference: {fileID: 2054646106}
     - target: {fileID: 1062792700431272, guid: b0a5b2167d4e64d52b0cb8bf6b7edda6, type: 2}
       propertyPath: m_IsActive
       value: 0
@@ -1140,17 +1140,17 @@ Prefab:
         type: 2}
       propertyPath: CameraObj
       value: 
-      objectReference: {fileID: 593858493}
+      objectReference: {fileID: 968452043}
     - target: {fileID: 114774762994935174, guid: 59149a619eede49cf95a73639c698536,
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 2130971009}
+      objectReference: {fileID: 2054646106}
     - target: {fileID: 114844885724716750, guid: 59149a619eede49cf95a73639c698536,
         type: 2}
       propertyPath: PlayerObj
       value: 
-      objectReference: {fileID: 2130971009}
+      objectReference: {fileID: 2054646106}
     - target: {fileID: 114844885724716750, guid: 59149a619eede49cf95a73639c698536,
         type: 2}
       propertyPath: RequiredKillCount
@@ -1434,88 +1434,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1918379479732700, guid: d8008d5eba2684924bd70ec16e2f9361,
     type: 2}
   m_PrefabInternal: {fileID: 1309309649}
---- !u!1001 &1326902561
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 199.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 277.60895
-      objectReference: {fileID: 0}
-    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: HealthText
-      value: 
-      objectReference: {fileID: 322537130}
-    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: StaminaText
-      value: 
-      objectReference: {fileID: 2069311429}
-    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: MagicaText
-      value: 
-      objectReference: {fileID: 1309309651}
-    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: SpellText
-      value: 
-      objectReference: {fileID: 1628005918}
-    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: WeaponText
-      value: 
-      objectReference: {fileID: 315655286}
-    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: InventoryObj
-      value: 
-      objectReference: {fileID: 758613388}
-    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: CurrentScene
-      value: Purgatory
-      objectReference: {fileID: 0}
-    - target: {fileID: 23298489708230348, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1348695639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,7 +1518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Aqua Sword
   ItemObj: {fileID: 1123315651662892, guid: 334fb669fdeeb48239ca8f19dfcd2df7, type: 2}
-  PlayerObj: {fileID: 2130971009}
+  PlayerObj: {fileID: 2054646106}
   OpenDistance: 5
   OpenSpeed: 50
 --- !u!1 &1360913124
@@ -2368,6 +2286,111 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1929642139}
   m_Mesh: {fileID: 4300004, guid: f9e06d3f59d9b417c81196aec871e93c, type: 3}
+--- !u!1001 &2016824099
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 184.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 282.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+        type: 2}
+      propertyPath: HealthText
+      value: 
+      objectReference: {fileID: 322537130}
+    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+        type: 2}
+      propertyPath: StaminaText
+      value: 
+      objectReference: {fileID: 2069311429}
+    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+        type: 2}
+      propertyPath: InventoryObj
+      value: 
+      objectReference: {fileID: 758613388}
+    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+        type: 2}
+      propertyPath: WeaponText
+      value: 
+      objectReference: {fileID: 315655286}
+    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+        type: 2}
+      propertyPath: SpellText
+      value: 
+      objectReference: {fileID: 1628005918}
+    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+        type: 2}
+      propertyPath: MagicaText
+      value: 
+      objectReference: {fileID: 1309309651}
+    - target: {fileID: 114417110388296896, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+        type: 2}
+      propertyPath: CurrentScene
+      value: Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108795912068610560, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+        type: 2}
+      propertyPath: m_DrawHalo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108795912068610560, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+        type: 2}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108795912068610560, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+        type: 2}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990139683128598, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975055122782542, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5dc4fb2c69039478e9c3983ec8ee6122, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &2054646106 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1975055122782542, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
+    type: 2}
+  m_PrefabInternal: {fileID: 2016824099}
 --- !u!1001 &2069311427
 Prefab:
   m_ObjectHideFlags: 0
@@ -2564,8 +2587,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2112699963}
   m_Mesh: {fileID: 4300006, guid: f9e06d3f59d9b417c81196aec871e93c, type: 3}
---- !u!1 &2130971009 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1975055122782542, guid: 5dc4fb2c69039478e9c3983ec8ee6122,
-    type: 2}
-  m_PrefabInternal: {fileID: 1326902561}

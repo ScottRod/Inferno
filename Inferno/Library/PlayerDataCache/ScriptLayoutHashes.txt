@@ -183,3 +183,4 @@ b5f094a5be143968f3f47eb30099c49d Assembly-CSharp.dll:.Shoot
 97bc52248e569519d08456e477968991 Assembly-CSharp.dll:.UpdatePosition
 200210ca9e3ab24dcd353d97804c7268 Assembly-CSharp.dll:.Lava
 0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FirstScene

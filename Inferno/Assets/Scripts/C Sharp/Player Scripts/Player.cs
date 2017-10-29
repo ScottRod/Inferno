@@ -123,8 +123,6 @@ public class Player : MonoBehaviour {
 
 			CurrentRemote = Input.GetJoystickNames () [i];
 
-			Debug.Log (CurrentRemote);
-
 		}
 
 		EquippedWeapon = PlayerPrefs.GetString ("Equipped Weapon", "");
@@ -316,13 +314,14 @@ public class Player : MonoBehaviour {
 
 					for (int i = 0; i < 25; i++) {
 
-						GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * 1.5f * 15.0f * i + new Vector3 (0, Playercamera.transform.localPosition.y, 0)), Quaternion.identity);
+						GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * 1.5f * 7.5f * i + new Vector3 (0, Playercamera.transform.localPosition.y, 0)), Quaternion.identity);
 
 						newAqua.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
 
-						newAqua.transform.localScale = new Vector3 (10.0f, 10.0f, 10.0f);
+						newAqua.transform.localScale = new Vector3 (7.5f, 7.5f, 7.5f);
 
 						Destroy (newAqua, 5.0f);
+
 
 					}
 
@@ -338,7 +337,7 @@ public class Player : MonoBehaviour {
 
 				}
 
-				if (Input.GetButtonDown("Jump PS4") && GodMode == true) {
+				if (Input.GetButton("Jump PS4") && GodMode == true) {
 
 					// makes the player jump
 
@@ -463,13 +462,14 @@ public class Player : MonoBehaviour {
 
 			for (int i = 0; i < 25; i++) {
 
-				GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * 1.5f * 15.0f * i + new Vector3 (0, Playercamera.transform.localPosition.y, 0)), Quaternion.identity);
+				GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * 1.5f * 7.5f * i + new Vector3 (0, Playercamera.transform.localPosition.y, 0)), Quaternion.identity);
 
 				newAqua.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
 
-				newAqua.transform.localScale = new Vector3 (10.0f, 10.0f, 10.0f);
+				newAqua.transform.localScale = new Vector3 (7.5f, 7.5f, 7.5f);
 
 				Destroy (newAqua, 5.0f);
+
 
 			}
 
