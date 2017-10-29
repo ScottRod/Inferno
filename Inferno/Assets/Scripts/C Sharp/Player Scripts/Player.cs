@@ -89,6 +89,12 @@ public class Player : MonoBehaviour {
 
 			newWeaponObj.transform.parent = Playercamera.transform;
 
+			if (GodMode == true) {
+
+				newWeaponObj.GetComponent<Weapon> ().Damage = Mathf.Infinity;
+
+			}
+
 			CurrentWeapon = newWeaponObj;
 
 		}
@@ -140,22 +146,6 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		if (GodMode == true) {
-
-			// makes the player op as fuck 
-
-			Health = Mathf.Infinity;
-
-			MagicaRegenSpeed = Mathf.Infinity;
-
-			Stamina = Mathf.Infinity;
-
-			SpellCastDelay = 0.0f;
-
-			CurrentWeapon.GetComponent<Weapon> ().Damage = Mathf.Infinity;
-
-		}
 
 		if (InventoryObj.activeSelf == true) {
 
@@ -243,11 +233,21 @@ public class Player : MonoBehaviour {
 
 		if (Dead == false) {
 
-			if (Input.GetButtonDown ("Jump") && cc.isGrounded == true) {
+			if (Input.GetButtonDown ("Jump") && cc.isGrounded == true && GodMode == false) {
 
 				// makes the player jump
 
 				speed.y = JumpPower;
+
+
+			}
+
+			if (Input.GetButton ("Jump") && GodMode == true) {
+
+				// makes the player jump
+
+				speed.y = JumpPower * 3.0f;
+
 
 			}
 
@@ -293,6 +293,14 @@ public class Player : MonoBehaviour {
 
 			speed.z *= 1.5f; 
 
+			if (GodMode == true) {
+
+				speed.x *= 10;
+
+				speed.z *= 10;
+
+			}
+
 			if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.D)) {
 
 				Stamina -= Time.deltaTime * 15;
@@ -323,9 +331,11 @@ public class Player : MonoBehaviour {
 
 			//Magica -= 15.0f;
 
-			GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * 1.5f + new Vector3(0,Playercamera.transform.localPosition.y,0)), Quaternion.identity);
+			GameObject newAqua = Instantiate (AquaObject, transform.position + (transform.rotation * Vector3.forward * 1.5f * 5.0f + new Vector3(0,Playercamera.transform.localPosition.y,0)), Quaternion.identity);
 
 			newAqua.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
+
+			newAqua.transform.localScale = new Vector3(5.0f,5.0f,5.0f);
 
 			Destroy (newAqua, 5.0f);
 
@@ -333,13 +343,43 @@ public class Player : MonoBehaviour {
 
 		}
 
-		// updates the text to display the current Health, stamina and magica
 
-		HealthText.GetComponent<Text> ().text = "Health: " + Mathf.Floor(Health);
+		if (GodMode == true) {
 
-		StaminaText.GetComponent<Text> ().text = "Stamina: " + Mathf.Floor(Mathf.Clamp(Stamina, 0.999f,100));
+			// makes the player op as fuck 
 
-		MagicaText.GetComponent<Text> ().text = "Magica: " + Mathf.Floor(Magica);
+			Health = Mathf.Infinity;
+
+			MagicaRegenSpeed = Mathf.Infinity;
+
+			Stamina = Mathf.Infinity;
+
+			SpellCastDelay = 0.0f;
+
+			CurrentWeapon.GetComponent<Weapon> ().Damage = Mathf.Infinity;
+
+		}
+			
+
+
+		if (GodMode == true) {
+
+			HealthText.GetComponent<Text> ().text = "Health: God";
+
+			StaminaText.GetComponent<Text> ().text = "Stamina: God";
+
+			MagicaText.GetComponent<Text> ().text = "Magica: God";
+
+		} else {
+			// updates the text to display the current Health, stamina and magica
+
+			HealthText.GetComponent<Text> ().text = "Health: " + Mathf.Floor(Health);
+
+			StaminaText.GetComponent<Text> ().text = "Stamina: " + Mathf.Floor(Mathf.Clamp(Stamina, 0.999f,100));
+
+			MagicaText.GetComponent<Text> ().text = "Magica: " + Mathf.Floor(Magica);
+
+		}
 
 		cc.Move (transform.rotation * speed * Time.deltaTime); // moves the player
 		 

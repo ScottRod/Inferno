@@ -22,7 +22,11 @@ public class LavaSpreading : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		SpawnTimer -= Time.deltaTime;
+		if (Vector3.Distance (GameObject.FindGameObjectWithTag ("Player").transform.position, transform.position) < GetComponent<MoveTo> ().ViewDistance) {
+
+			SpawnTimer -= Time.deltaTime;
+
+		}
 
 		if (SpawnTimer < 0) {
 
