@@ -352,9 +352,9 @@ public class Player : MonoBehaviour {
 
 					// speeds up the player speed
 
-					speed.x *= 1.5f;  
+					speed.x *= 2f;
 
-					speed.z *= 1.5f; 
+					speed.z *= 2f;
 
 					if (GodMode == true) {
 
@@ -418,9 +418,9 @@ public class Player : MonoBehaviour {
 
 			// speeds up the player speed
 
-			speed.x *= 1.5f;  
+			speed.x *= 2f;
 
-			speed.z *= 1.5f; 
+			speed.z *= 2f;
 
 			if (GodMode == true) {
 
@@ -521,7 +521,11 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 
+		if (other.tag == "Spike") {
 
+			Health -= 100.0f;
+
+		}
 
    }
 
