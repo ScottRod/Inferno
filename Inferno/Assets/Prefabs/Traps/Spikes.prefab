@@ -1707,6 +1707,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   In: 1
   Active: 1
-  SpeedRange: {x: 2, y: 5}
+  SpeedRange: {x: 2, y: 3}
   PistonObj: {fileID: 1151214351240758}
   BackThingyOfSpikes: {fileID: 1520316510858694}
