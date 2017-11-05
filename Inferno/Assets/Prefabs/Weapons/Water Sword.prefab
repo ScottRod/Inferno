@@ -366,7 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0937f22c001cd42be9d79f84cf9822a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 10
+  Damage: 100
   SwingSpeed: 360
   Swinging: 0
   Active: 1
