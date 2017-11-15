@@ -44,6 +44,8 @@ public class Player : MonoBehaviour {
 
 	public GameObject AquaObject; // the water ball thing that the player can shoot
 
+	public GameObject TeleportObj; // the teleport ball object
+
 	public string EquippedSpell = ""; // the current equipped spell 
 
 	public GameObject CurrentWeapon; // current gameobject weapon
@@ -128,6 +130,8 @@ public class Player : MonoBehaviour {
 		EquippedWeapon = PlayerPrefs.GetString ("Equipped Weapon", "");
 
 		EquippedSpell = PlayerPrefs.GetString ("Equipped Spell", "");
+
+		EquippedSpell = "Teleport";
 
 		SpawnWeapon (EquippedWeapon);
 
@@ -454,6 +458,20 @@ public class Player : MonoBehaviour {
 
 			SpellCastDelay = 0.5f;
 		
+		}
+
+		if (Input.GetMouseButtonDown (1) && EquippedSpell == "Teleport" && Magica >= 25 && SpellCastDelay <= 0 && InventoryObj.activeSelf == false) {
+
+			Magica -= 25.0f;
+
+			GameObject newTeleport = Instantiate (TeleportObj, transform.position + (transform.rotation * Vector3.forward * 2.0f + new Vector3 (0, Playercamera.transform.localPosition.y, 0)), Quaternion.identity);
+
+			newTeleport.transform.rotation = transform.rotation * Playercamera.transform.localRotation;
+
+			newTeleport.GetComponent<Teleport> ().PlayerObj = gameObject;
+
+			SpellCastDelay = 1.0f;
+
 		}
 
 		if (Input.GetMouseButton(1) && EquippedSpell == "Aqua Ball" && Magica >= 15 && SpellCastDelay <= 0 && InventoryObj.activeSelf == false && GodMode == true) { 
