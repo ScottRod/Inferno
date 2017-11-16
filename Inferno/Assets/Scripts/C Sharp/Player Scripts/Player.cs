@@ -8,6 +8,12 @@ public class Player : MonoBehaviour {
 
 	CharacterController cc; // player's character controller, used to move the player and make gravity effect it
 
+	public AudioClip Walking;
+
+	public AudioClip Drop;
+
+	public AudioClip Jump;
+
 	public bool GodMode = false; // for quickly testing out the game e.g if u need to quickly get to a spot where there is a bug 
 
 	public GameObject Playercamera;
@@ -530,6 +536,22 @@ public class Player : MonoBehaviour {
 			StaminaText.GetComponent<Text> ().text = "Stamina: " + Mathf.Floor(Mathf.Clamp(Stamina, 0.999f,100));
 
 			MagicaText.GetComponent<Text> ().text = "Magica: " + Mathf.Floor(Magica);
+
+		}
+
+		if (speed.x != 0 || speed.z != 0 && GetComponent<AudioSource> ().isPlaying == false && cc.isGrounded == true) {
+
+			GetComponent<AudioSource> ().clip = Walking;
+
+			GetComponent<AudioSource> ().loop = true;
+
+			GetComponent<AudioSource> ().Play ();
+
+		} 
+
+		if (speed.x == 0 && speed.z == 0 && cc.isGrounded == true && GetComponent<AudioSource> ().clip == Walking) {
+
+			GetComponent<AudioSource> ().Stop();
 
 		}
 

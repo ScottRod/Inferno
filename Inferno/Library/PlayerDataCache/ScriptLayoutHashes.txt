@@ -161,7 +161,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 87f8fbab7aae47c37d65ff96b727f1ab Assembly-CSharp.dll:.Inventory
 2675441011e54454dc269329b35fb34e Assembly-CSharp.dll:.Portal
 2c62b9ae79b8b54dd7b55fa7d311452b Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.Water
-a3f13d3fa635f94764c9d5fcf229fda8 Assembly-CSharp.dll:.Player
+c65260b6a698e4b1c67baa38809b09d3 Assembly-CSharp.dll:.Player
 2636e852a6692498945ad679f2c2756c Assembly-CSharp.dll:.MoveTo
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 5f2ad81aa8994e8fbe25d1e57afe6773 UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
@@ -186,3 +186,4 @@ b5f094a5be143968f3f47eb30099c49d Assembly-CSharp.dll:.Shoot
 97bc52248e569519d08456e477968991 Assembly-CSharp.dll:.UpdatePosition
 200210ca9e3ab24dcd353d97804c7268 Assembly-CSharp.dll:.Lava
 0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
+a0eca1aa05b0a8e0ba3190ad395e6fe1 Assembly-CSharp.dll:.Audio
